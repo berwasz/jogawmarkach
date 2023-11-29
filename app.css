@@ -1,0 +1,141 @@
+@import "~bootstrap";
+@import "bootstrap-icons";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fef9f3;
+}
+
+.tapeta:after {
+    content:'';
+    background-image: url('/img/Kasia_logo_ok_B&W_tlo.png'), linear-gradient(to right, #f8cd96, #f8cd96);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:-1;
+    opacity: 0.1;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.linki {
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+    /*    display: flex;
+        justify-content: center;
+        align-items: center;*/
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    /*width: 100%;
+    height: 200px; !* Set the fixed height of the footer here *!
+    line-height: 60px; !* Vertically center the text there *!*/
+
+
+}
+
+.google-play {
+    width: 200px;
+}
+
+.app-store {
+    width: 155px;
+}
+
+@media (max-width: 480px) {
+    .hpmenu {
+        background-image: url("/img/pomost_homepage_2_mobile.png");
+    }
+
+}
+
+@media (min-width: 481px) {
+    .hpmenu {
+        background-image: url("/img/pomost_homepage_2_desktop.png");
+    }
+}
+
+@media (max-width: 767px) {
+    .lead {
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+.hpmenu {
+    /*background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_desktop.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+#cennik {
+    /*padding-bottom: 300px;*/
+}
+
+#kontakt {
+    background-color: #f8cd96;
+}
+
+.onepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+}
+
+.navbar-nav {
+    justify-content: end;
+}
+.navbar-toggler {
+    justify-content: end;
+}
+
+.nav-link {
+    text-align: end;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: .5em;
+    padding-left: 1em;
+}
+
+.table-color {
+    background-color: transparent !important;
+}
+
+.container-fluid {
+    scroll-snap-align: start;
+}

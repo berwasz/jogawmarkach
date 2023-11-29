@@ -1,0 +1,142 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} | Kasia Latek{% endblock %}
+
+{% block body %}
+
+
+    <div class="main">
+        <div class="hpmenu container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container min-vw-100 p-2 pe-5">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <a class="nav-link" aria-current="page" href="#omnie">O mnie</a>
+                        <a class="nav-link" href="#oferta">Oferta</a>
+                        <a class="nav-link" href="#rejestracja">Rejestracja</a>
+                        <a class="nav-link" href="#cennik">Cennik</a>
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="background">
+            <div id="omnie" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark">
+                <div class="container text-center display-4">
+                    <p>
+                        O mnie
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img width="75%" src="{{ asset('img/kasiafot_okr_1.webp') }}">
+                        </div>
+                        <div class="col-md-8 lead">
+                            <p class="h4">Instruktor fitness. Katarzyna Latek. Instruktorka pilates, entuzjastka jogi i strechingu, pasjonatka wielu form ćwiczeń z zakresu body&mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="oferta" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark">
+                <div class="container text-center display-4">
+                    <p>
+                        Oferta
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 lead">
+                            <p class="h4">Instruktor fitness. Katarzyna Latek. Instruktorka pilates, entuzjastka jogi i strechingu, pasjonatka wielu form ćwiczeń z zakresu body&mind.</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img width="75%" src="{{ asset('img/kasiafot_okr_1.webp') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rejestracja" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark">
+                <div class="container text-center display-4">
+                    <p>
+                        Rejestracja
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img width="75%" src="{{ asset('img/efitnessapp_logo_okr.webp') }}">
+                        </div>
+                        <div class="col-md-8 lead">
+                            <div class="container d-flex justify-content-center align-items-center flex-wrap">
+                                <span>Pobierz aplikację mobilną</span>
+                                <div class="container d-flex justify-content-center align-items-center flex-wrap">
+                                    <a class="p-2" href="https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl"><img class="google-play" src="{{ asset('img/google_play.webp') }}" /></a>
+                                    <a class="p-2" href="https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8"><img class="app-store" src="{{ asset('img/appstore.webp') }}" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="cennik" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100">
+                    <div class="container text-center display-4">
+                        <p>
+                            Cennik
+                        </p>
+                    </div>
+
+                    <div class="container col-md-6">
+                        <table class="table">
+                            <thead>
+                            <tr class="">
+                                <th class="table-color" scope="col">Usługa</th>
+                                <th class="table-color text-center" scope="col">Cena</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                            <tr>
+                                <th class="table-color" scope="row">Wejście jednorazowe</th>
+                                <td class="table-color text-center">35 zł</td>
+                            </tr>
+                            <tr>
+                                <th class="table-color" scope="row">4 wejścia / 30 dni</th>
+                                <td class="table-color text-center">120 zł</td>
+                            </tr>
+                            <tr>
+                                <th class="table-color" scope="row">8 wejść / 30 dni</th>
+                                <td class="table-color text-center">200 zł</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                    <div class="">
+                        <footer id="kontakt" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3">
+                            <div class="d-flex justify-content-around">
+                                <span><a class="h1 p-2 text-body-secondary" href="https://www.facebook.com/KasiaLatekJoga" title="facebook"><i class="bi bi-facebook"></i></a></span>
+                                <span><a class="h1 p-2 text-body-secondary" href="https://www.instagram.com/kasia_latek" title="instagram"><i class="bi bi-instagram"></i></a></span>
+                                <span><a class="h1 p-2 text-body-secondary" href="https://www.m.me/101829889521117" title="messenger"><i class="bi bi-messenger"></i></a></span>
+                                <span><a class="h1 p-2 text-body-secondary" href="mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl"  title="email"><i class="bi bi-envelope"></i></a></span>
+                            </div>
+                            {#<div class="col-md-4 text-center">
+                                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 BenMedia</span>
+                            </div>#}
+                        </footer>
+                    </div>
+            </div>
+        </div>
+   </div>
+
+{% endblock %}
+
