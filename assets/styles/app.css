@@ -141,3 +141,10 @@ a {
 .container-fluid {
     scroll-snap-align: start;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 25vh;
+    width: 10vw;
+    filter: invert(50%);
+}
