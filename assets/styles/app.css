@@ -33,6 +33,7 @@ body {
     scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
 .linki {
@@ -120,7 +121,8 @@ a {
     justify-content: end;
 }
 .navbar-toggler {
-    justify-content: end;
+
+    margin-right: 1em;
 }
 
 .nav-link {
@@ -129,7 +131,7 @@ a {
     font-size: 1.5em;
     font-weight: 700;
     padding-top: .5em;
-    padding-left: 1em;
+    margin-right: 1em;
 }
 
 .table-color {
