@@ -152,7 +152,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
             </div>
 
-            <div id=\"carousel\" class=\"container-fluid carousel slide\">
+            <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
                         <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
@@ -286,6 +286,8 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         </div>
    </div>
 
+
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -386,7 +388,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
             </div>
 
-            <div id=\"carousel\" class=\"container-fluid carousel slide\">
+            <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
                         <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
@@ -503,7 +505,11 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         </div>
    </div>
 
+
+
 {% endblock %}
+
+
 
 ", "hp.html.twig", "C:\\Projekty\\jogawmarkach\\templates\\hp.html.twig");
     }

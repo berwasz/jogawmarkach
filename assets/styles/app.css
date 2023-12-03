@@ -146,5 +146,5 @@ a {
 .carousel-control-next-icon {
     height: 25vh;
     width: 10vw;
-    filter: invert(50%);
+    filter: invert(40%);
 }

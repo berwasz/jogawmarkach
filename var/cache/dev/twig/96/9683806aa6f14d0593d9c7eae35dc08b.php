@@ -61,11 +61,9 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
         // line 11
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/favicon.ico"), "html", null, true);
         echo "\">
-        <link rel=\"stylesheet\" href=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("app.css"), "html", null, true);
-        echo "\">
-
+        ";
+        // line 13
+        echo "
         ";
         // line 14
         $this->displayBlock('stylesheets', $context, $blocks);
@@ -198,7 +196,7 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
      */
     public function getDebugInfo()
     {
-        return array (  163 => 24,  150 => 19,  140 => 18,  127 => 15,  117 => 14,  98 => 10,  85 => 25,  83 => 24,  78 => 21,  76 => 18,  73 => 17,  71 => 14,  66 => 12,  62 => 11,  58 => 10,  47 => 1,);
+        return array (  161 => 24,  148 => 19,  138 => 18,  125 => 15,  115 => 14,  96 => 10,  83 => 25,  81 => 24,  76 => 21,  74 => 18,  71 => 17,  69 => 14,  66 => 13,  62 => 11,  58 => 10,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -214,7 +212,7 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
 
         <title>{% block title %}Joga w Markach{% endblock %}</title>
         <link rel=\"icon\" href=\"{{ asset('img/favicon.ico') }}\">
-        <link rel=\"stylesheet\" href=\"{{ asset('app.css') }}\">
+        {#<link rel=\"stylesheet\" href=\"{{ asset('app.css') }}\">#}
 
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
