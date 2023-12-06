@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    width: 100vw;
     position: absolute;
     top: 0;
     right: 0;
@@ -65,18 +66,26 @@ a {
 }
 
 .google-play {
-    width: 200px;
+    max-height: 70px;
+
 }
 
 .app-store {
-    width: 200px;
+    max-height: 70px;
+
+}
+
+.efitness-logo {
+    max-height: 70px;
 }
 
 @media (max-width: 480px) {
     .hpmenu {
         background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_mobile.webp");
     }
-
+/*    #rejestracja {
+        align-content: space-around !important;
+    }*/
 }
 
 @media (min-width: 481px) {
@@ -88,8 +97,10 @@ a {
 @media (max-width: 767px) {
     .lead {
         text-align: center;
-        padding: 1em;
+        /*padding: 1em;*/
     }
+
+
 }
 
 .hpmenu {
@@ -122,7 +133,7 @@ a {
 }
 .navbar-toggler {
 
-    margin-right: 1em;
+    /*margin-right: 1em;*/
 }
 
 .nav-link {
@@ -131,7 +142,7 @@ a {
     font-size: 1.5em;
     font-weight: 700;
     padding-top: .5em;
-    margin-right: 1em;
+    margin-left: .75em;
 }
 
 .table-color {
@@ -148,3 +159,71 @@ a {
     width: 10vw;
     filter: invert(40%);
 }
+
+.carousel-indicators [data-bs-target]{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    filter: invert(70%);
+
+}
+
+#calendar {
+    max-width: 1100px;
+    height: 600px;
+
+}
+
+@media (max-width: 700px) {
+    .fc .fc-toolbar.fc-header-toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+    #calendar {
+        /*max-height: 100vh !important;*/
+    }
+
+    .fc-header-toolbar .fc-toolbar-chunk {
+        /*display: block;*/
+    }
+
+    .fc-toolbar-title {
+       /* font-size: 1rem !important;*/
+    }
+
+
+
+    .fc-h-event .fc-event-main-frame {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .fc-event-main-frame {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .fc-col-header-cell-cushion {
+        font-size: .8rem !important;
+    }
+}
+
+    .fc-toolbar-chunk {
+        margin-bottom: .5rem;
+    }
+
+    .fc-col-header-cell-cushion {
+        color: #6c757d;
+        font-size: 1rem;
+    }
+    .fc-daygrid-day-number {
+        color: #6c757d;
+
+    }
+/*    .fc-view-harness .fc-view-harness-active {
+        height: 500px !important;
+    }*/
+
+

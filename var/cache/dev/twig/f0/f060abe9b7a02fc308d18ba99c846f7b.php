@@ -90,8 +90,8 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
     <div class=\"main\">
         <div class=\"hpmenu container-fluid\">
-            <nav class=\"navbar navbar-expand-lg\">
-                <div class=\"container min-vw-100 p-2 pe-5\">
+            <nav class=\"navbar navbar-expand-md\">
+                <div class=\"container\">
                     <a class=\"navbar-brand\" href=\"#\"></a>
                     <button class=\"navbar-toggler ham\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                         <span class=\"navbar-toggler-icon\"></span>
@@ -99,6 +99,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">
                         <a class=\"nav-link\" aria-current=\"page\" href=\"#omnie\">O mnie</a>
                         <a class=\"nav-link\" href=\"#oferta\">Oferta</a>
+                        <a class=\"nav-link\" href=\"#grafik\">Grafik</a>
                         <a class=\"nav-link\" href=\"#rejestracja\">Rejestracja</a>
                         <a class=\"nav-link\" href=\"#cennik\">Cennik</a>
                         <a class=\"nav-link\" href=\"#kontakt\">Kontakt</a>
@@ -119,7 +120,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     <div class=\"row align-items-center\">
                         <div class=\"col-md-4 text-center\">
                             <img width=\"75%\" src=\"";
-        // line 38
+        // line 39
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/kasiafot_okr_1.webp"), "html", null, true);
         echo "\">
                         </div>
@@ -144,7 +145,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                         </div>
                         <div class=\"col-md-4 text-center\">
                             <img width=\"75%\" src=\"";
-        // line 60
+        // line 61
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/kasiafot_okr_1.webp"), "html", null, true);
         echo "\">
                         </div>
@@ -152,45 +153,70 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
             </div>
 
+            <div id=\"grafik\" class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                <div class=\"container text-center display-4\">
+                    <p>
+                        Grafik
+                    </p>
+                </div>
+
+                <div id=\"calendar\" class=\"container mh-100\"></div>
+            </div>
+
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
+                <div class=\"carousel-indicators\">
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"0\" class=\"indicator active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
+                </div>
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
-                        <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                        <div id=\"rejestracja\" class=\"container d-grid flex-column align-content-center justify-content-center min-vh-100 border-bottom border-dark\">
+
                             <div class=\"container text-center display-4\">
-                                <p>
-                                    Rejestracja
-                                </p>
+                                <p>Rejestracja</p>
                             </div>
 
-                            <div class=\"container w-75\">
-                                <div class=\"row align-items-center\">
-                                    <div class=\"col-md-4 text-center\">
-                                        <img width=\"75%\" src=\"";
-        // line 79
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo_okr.webp"), "html", null, true);
+                            <div class=\"container text-center lead\">
+                                <p>Do rejestracji w klubie oraz rezerwacji miejsc na poszczególne zajęcia polecamy w pełni darmową aplikację eFitness App.</p>
+                            </div>
+
+                            <div class=\"container d-flex align-items-center justify-content-center flex-wrap\">
+                                <img class=\"efitness-logo rounded-3 m-2\" src=\"";
+        // line 96
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo.webp"), "html", null, true);
         echo "\">
-                                    </div>
-                                    <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                            <span>Pobierz aplikację mobilną</span>
-                                            <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                                <a class=\"p-2\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"";
-        // line 85
+                                <div class=\"d-inline-block text-center\">
+                                    <a href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"m-2 google-play\" src=\"";
+        // line 98
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
         echo "\" /></a>
-                                                <a class=\"p-2\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"";
-        // line 86
+                                    <a href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"m-2 app-store\" src=\"";
+        // line 99
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
         echo "\" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                     <div class=\"carousel-item\">
-                        <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                        <div id=\"rejestracja2\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                            <div class=\"container text-center display-4\">
+                                <p>
+                                    Instalacja aplikacji
+                                </p>
+                            </div>
+
+                            <div class=\"container text-center lead\">
+                                <p>Po pobraniu aplikacji </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=\"carousel-item\">
+                        <div id=\"rejestracja3\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
                             <div class=\"container text-center display-4\">
                                 <p>
                                     Rejestracja
@@ -201,23 +227,21 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                 <div class=\"row align-items-center\">
                                     <div class=\"col-md-4 text-center\">
                                         <img width=\"75%\" src=\"";
-        // line 105
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo_okr.webp"), "html", null, true);
         echo "\">
                                     </div>
                                     <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
+                                        <div class=\"container d-flex flex-column justify-content-center align-items-center flex-wrap\">
                                             <span>Pobierz aplikację mobilną</span>
-                                            <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                                <a class=\"p-2\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"";
-        // line 111
+                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"";
+        // line 136
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
         echo "\" /></a>
-                                                <a class=\"p-2\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"";
-        // line 112
+                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"";
+        // line 137
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
         echo "\" /></a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -254,16 +278,20 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </thead>
                             <tbody class=\"table-group-divider\">
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">Wejście jednorazowe</th>
-                                <td class=\"table-color text-center\">35 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga/pilates - wejście jednorazowe</th>
+                                <td class=\"table-color text-center\">35&nbspzł</td>
                             </tr>
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">4 wejścia / 30 dni</th>
-                                <td class=\"table-color text-center\">120 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga - 4&nbspwejścia / 30&nbspdni</th>
+                                <td class=\"table-color text-center\">120&nbspzł</td>
                             </tr>
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">8 wejść / 30 dni</th>
-                                <td class=\"table-color text-center\">200 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga - 8&nbspwejść / 30&nbspdni</th>
+                                <td class=\"table-color text-center\">200&nbspzł</td>
+                            </tr>
+                            <tr>
+                                <th class=\"table-color\" scope=\"row\">Pilates - 4&nbspwejścia / 45&nbspdni</th>
+                                <td class=\"table-color text-center\">120&nbspzł</td>
                             </tr>
                             </tbody>
                         </table>
@@ -279,7 +307,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                 <span><a class=\"h1 p-2 text-body-secondary\" href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"  title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
                             </div>
                             ";
-        // line 177
+        // line 205
         echo "                        </footer>
                     </div>
             </div>
@@ -318,7 +346,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  283 => 177,  218 => 112,  214 => 111,  205 => 105,  183 => 86,  179 => 85,  170 => 79,  148 => 60,  123 => 38,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
+        return array (  311 => 205,  243 => 137,  239 => 136,  231 => 131,  196 => 99,  192 => 98,  187 => 96,  149 => 61,  124 => 39,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -332,8 +360,8 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
     <div class=\"main\">
         <div class=\"hpmenu container-fluid\">
-            <nav class=\"navbar navbar-expand-lg\">
-                <div class=\"container min-vw-100 p-2 pe-5\">
+            <nav class=\"navbar navbar-expand-md\">
+                <div class=\"container\">
                     <a class=\"navbar-brand\" href=\"#\"></a>
                     <button class=\"navbar-toggler ham\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                         <span class=\"navbar-toggler-icon\"></span>
@@ -341,6 +369,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">
                         <a class=\"nav-link\" aria-current=\"page\" href=\"#omnie\">O mnie</a>
                         <a class=\"nav-link\" href=\"#oferta\">Oferta</a>
+                        <a class=\"nav-link\" href=\"#grafik\">Grafik</a>
                         <a class=\"nav-link\" href=\"#rejestracja\">Rejestracja</a>
                         <a class=\"nav-link\" href=\"#cennik\">Cennik</a>
                         <a class=\"nav-link\" href=\"#kontakt\">Kontakt</a>
@@ -388,36 +417,61 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
             </div>
 
+            <div id=\"grafik\" class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                <div class=\"container text-center display-4\">
+                    <p>
+                        Grafik
+                    </p>
+                </div>
+
+                <div id=\"calendar\" class=\"container mh-100\"></div>
+            </div>
+
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
+                <div class=\"carousel-indicators\">
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"0\" class=\"indicator active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
+                    <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
+                </div>
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
-                        <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                        <div id=\"rejestracja\" class=\"container d-grid flex-column align-content-center justify-content-center min-vh-100 border-bottom border-dark\">
+
                             <div class=\"container text-center display-4\">
-                                <p>
-                                    Rejestracja
-                                </p>
+                                <p>Rejestracja</p>
                             </div>
 
-                            <div class=\"container w-75\">
-                                <div class=\"row align-items-center\">
-                                    <div class=\"col-md-4 text-center\">
-                                        <img width=\"75%\" src=\"{{ asset('img/efitnessapp_logo_okr.webp') }}\">
-                                    </div>
-                                    <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                            <span>Pobierz aplikację mobilną</span>
-                                            <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                                <a class=\"p-2\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"{{ asset('img/google_play.webp') }}\" /></a>
-                                                <a class=\"p-2\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"{{ asset('img/appstore.webp') }}\" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class=\"container text-center lead\">
+                                <p>Do rejestracji w klubie oraz rezerwacji miejsc na poszczególne zajęcia polecamy w pełni darmową aplikację eFitness App.</p>
                             </div>
+
+                            <div class=\"container d-flex align-items-center justify-content-center flex-wrap\">
+                                <img class=\"efitness-logo rounded-3 m-2\" src=\"{{ asset('img/efitnessapp_logo.webp') }}\">
+                                <div class=\"d-inline-block text-center\">
+                                    <a href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"m-2 google-play\" src=\"{{ asset('img/google_play.webp') }}\" /></a>
+                                    <a href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"m-2 app-store\" src=\"{{ asset('img/appstore.webp') }}\" /></a>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                     <div class=\"carousel-item\">
-                        <div id=\"rejestracja\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                        <div id=\"rejestracja2\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
+                            <div class=\"container text-center display-4\">
+                                <p>
+                                    Instalacja aplikacji
+                                </p>
+                            </div>
+
+                            <div class=\"container text-center lead\">
+                                <p>Po pobraniu aplikacji </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=\"carousel-item\">
+                        <div id=\"rejestracja3\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
                             <div class=\"container text-center display-4\">
                                 <p>
                                     Rejestracja
@@ -430,12 +484,10 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                         <img width=\"75%\" src=\"{{ asset('img/efitnessapp_logo_okr.webp') }}\">
                                     </div>
                                     <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
+                                        <div class=\"container d-flex flex-column justify-content-center align-items-center flex-wrap\">
                                             <span>Pobierz aplikację mobilną</span>
-                                            <div class=\"container d-flex justify-content-center align-items-center flex-wrap\">
-                                                <a class=\"p-2\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"{{ asset('img/google_play.webp') }}\" /></a>
-                                                <a class=\"p-2\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"{{ asset('img/appstore.webp') }}\" /></a>
-                                            </div>
+                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"{{ asset('img/google_play.webp') }}\" /></a>
+                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"{{ asset('img/appstore.webp') }}\" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -472,16 +524,20 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </thead>
                             <tbody class=\"table-group-divider\">
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">Wejście jednorazowe</th>
-                                <td class=\"table-color text-center\">35 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga/pilates - wejście jednorazowe</th>
+                                <td class=\"table-color text-center\">35&nbspzł</td>
                             </tr>
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">4 wejścia / 30 dni</th>
-                                <td class=\"table-color text-center\">120 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga - 4&nbspwejścia / 30&nbspdni</th>
+                                <td class=\"table-color text-center\">120&nbspzł</td>
                             </tr>
                             <tr>
-                                <th class=\"table-color\" scope=\"row\">8 wejść / 30 dni</th>
-                                <td class=\"table-color text-center\">200 zł</td>
+                                <th class=\"table-color\" scope=\"row\">Joga - 8&nbspwejść / 30&nbspdni</th>
+                                <td class=\"table-color text-center\">200&nbspzł</td>
+                            </tr>
+                            <tr>
+                                <th class=\"table-color\" scope=\"row\">Pilates - 4&nbspwejścia / 45&nbspdni</th>
+                                <td class=\"table-color text-center\">120&nbspzł</td>
                             </tr>
                             </tbody>
                         </table>
