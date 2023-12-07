@@ -161,6 +161,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
 
                 <div id=\"calendar\" class=\"container mh-100\"></div>
+
             </div>
 
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -183,16 +184,16 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                             <div class=\"container d-flex align-items-center justify-content-center flex-wrap\">
                                 <img class=\"efitness-logo rounded-3 m-2\" src=\"";
-        // line 96
+        // line 97
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo.webp"), "html", null, true);
         echo "\">
                                 <div class=\"d-inline-block text-center\">
                                     <a href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"m-2 google-play\" src=\"";
-        // line 98
+        // line 99
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
         echo "\" /></a>
                                     <a href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"m-2 app-store\" src=\"";
-        // line 99
+        // line 100
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
         echo "\" /></a>
                                 </div>
@@ -210,7 +211,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </div>
 
                             <div class=\"container text-center lead\">
-                                <p>Po pobraniu aplikacji </p>
+                                <p>Tu powinna być instrukcja instalacji aplikacji</p>
                             </div>
 
                         </div>
@@ -219,32 +220,12 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                         <div id=\"rejestracja3\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
                             <div class=\"container text-center display-4\">
                                 <p>
-                                    Rejestracja
+                                    Instalacja aplikacji
                                 </p>
                             </div>
 
-                            <div class=\"container w-75\">
-                                <div class=\"row align-items-center\">
-                                    <div class=\"col-md-4 text-center\">
-                                        <img width=\"75%\" src=\"";
-        // line 131
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo_okr.webp"), "html", null, true);
-        echo "\">
-                                    </div>
-                                    <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex flex-column justify-content-center align-items-center flex-wrap\">
-                                            <span>Pobierz aplikację mobilną</span>
-                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"";
-        // line 136
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
-        echo "\" /></a>
-                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"";
-        // line 137
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
-        echo "\" /></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class=\"container text-center lead\">
+                                <p>Tu powinna być instrukcja instalacji aplikacji</p>
                             </div>
                         </div>
                     </div>
@@ -300,14 +281,14 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                     <div class=\"\">
                         <footer id=\"kontakt\" class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3\">
-                            <div class=\"d-flex justify-content-around\">
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i class=\"bi bi-facebook\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i class=\"bi bi-instagram\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i class=\"bi bi-messenger\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"  title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
+                            <div class=\"social d-flex justify-content-around\">
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i class=\"bi bi-facebook\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i class=\"bi bi-instagram\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i class=\"bi bi-messenger\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"  title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
                             </div>
                             ";
-        // line 205
+        // line 195
         echo "                        </footer>
                     </div>
             </div>
@@ -346,7 +327,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  311 => 205,  243 => 137,  239 => 136,  231 => 131,  196 => 99,  192 => 98,  187 => 96,  149 => 61,  124 => 39,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
+        return array (  292 => 195,  197 => 100,  193 => 99,  188 => 97,  149 => 61,  124 => 39,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -425,6 +406,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </div>
 
                 <div id=\"calendar\" class=\"container mh-100\"></div>
+
             </div>
 
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -465,7 +447,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </div>
 
                             <div class=\"container text-center lead\">
-                                <p>Po pobraniu aplikacji </p>
+                                <p>Tu powinna być instrukcja instalacji aplikacji</p>
                             </div>
 
                         </div>
@@ -474,23 +456,12 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                         <div id=\"rejestracja3\" class=\"container d-flex flex-column align-items-center justify-content-center min-vh-100 border-bottom border-dark\">
                             <div class=\"container text-center display-4\">
                                 <p>
-                                    Rejestracja
+                                    Instalacja aplikacji
                                 </p>
                             </div>
 
-                            <div class=\"container w-75\">
-                                <div class=\"row align-items-center\">
-                                    <div class=\"col-md-4 text-center\">
-                                        <img width=\"75%\" src=\"{{ asset('img/efitnessapp_logo_okr.webp') }}\">
-                                    </div>
-                                    <div class=\"col-md-8 lead\">
-                                        <div class=\"container d-flex flex-column justify-content-center align-items-center flex-wrap\">
-                                            <span>Pobierz aplikację mobilną</span>
-                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"google-play\" src=\"{{ asset('img/google_play.webp') }}\" /></a>
-                                            <a class=\"p-2 d-flex justify-content-center align-items-center\" href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"app-store\" src=\"{{ asset('img/appstore.webp') }}\" /></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class=\"container text-center lead\">
+                                <p>Tu powinna być instrukcja instalacji aplikacji</p>
                             </div>
                         </div>
                     </div>
@@ -546,11 +517,11 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                     <div class=\"\">
                         <footer id=\"kontakt\" class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3\">
-                            <div class=\"d-flex justify-content-around\">
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i class=\"bi bi-facebook\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i class=\"bi bi-instagram\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i class=\"bi bi-messenger\"></i></a></span>
-                                <span><a class=\"h1 p-2 text-body-secondary\" href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"  title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
+                            <div class=\"social d-flex justify-content-around\">
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i class=\"bi bi-facebook\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i class=\"bi bi-instagram\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i class=\"bi bi-messenger\"></i></a></span>
+                                <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\" href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"  title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
                             </div>
                             {#<div class=\"col-md-4 text-center\">
                                 <span class=\"mb-3 mb-md-0 text-body-secondary\">&copy; 2023 BenMedia</span>

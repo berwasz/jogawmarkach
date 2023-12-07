@@ -12,6 +12,8 @@ import * as FullCalendar from "@fullcalendar/core";
 import plLocale from '@fullcalendar/core/locales/pl';
 import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+
 
 const $ = require('jquery');
 // this "modifies" the jquery module: adding behavior to it
@@ -48,14 +50,31 @@ function checkitem() {
 
 //grafik//
 
+/*    const calendarEl = document.getElementById('calendar')
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [
+            googleCalendarPlugin,
+            dayGridPlugin
+        ],
+        initialView: 'dayGridMonth',
+        events: {
+            googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com'
+        }
+    })
+
+    calendar.render()*/
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: [
             interactionPlugin,
-            dayGridPlugin
+            dayGridPlugin,
+            googleCalendarPlugin
         ],
+        googleCalendarApiKey: 'AIzaSyDP243XC-h9sBXUny4AvExzpfkg2jD7VTA',
         themeSystem: 'bootstrap5',
         headerToolbar: {
             start: 'title',
@@ -68,7 +87,11 @@ document.addEventListener('DOMContentLoaded', function() {
         locale: 'plLocale',
         firstDay: 1,
 
-        events: [
+        events: {
+            googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com'
+        },
+
+        /*events: [
             {
                 title: 'Joga',
                 start: '2023-12-02T10:00:00',
@@ -195,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 start: '2024-01-30T20:00:00',
                 end: '2024-01-30T20:55:00'
             },
-        ],
+        ],*/
         eventDisplay: 'block',
         eventOrder: 'start,title',
         eventTimeFormat:

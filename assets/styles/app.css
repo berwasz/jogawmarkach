@@ -120,6 +120,10 @@ a {
     background-color: #f8cd96;
 }
 
+.social-icon {
+    font-size: 4rem;
+}
+
 .onepage {
     height: 100vh;
     display: flex;
@@ -174,33 +178,44 @@ a {
 
 }
 
+@media (min-width: 700px) {
+    .fc .fc-toolbar-title {
+        text-align: left;
+    }
+}
+
 @media (max-width: 700px) {
     .fc .fc-toolbar.fc-header-toolbar {
         display: flex;
         flex-direction: column;
     }
-    #calendar {
-        /*max-height: 100vh !important;*/
+
+    .fc .fc-toolbar-title {
+        text-align: center;
     }
-
-    .fc-header-toolbar .fc-toolbar-chunk {
-        /*display: block;*/
+    .fc-button-group {
+        margin-left: 0px !important;
     }
-
-    .fc-toolbar-title {
-       /* font-size: 1rem !important;*/
-    }
-
-
 
     .fc-h-event .fc-event-main-frame {
         flex-direction: column;
     }
+    .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+        margin-left: .75em !important;
+    }
+
 }
 
 @media (max-width: 500px) {
     .fc-event-main-frame {
         font-size: .6rem;
+    }
+    .social {
+        flex-direction: column;
+
+    }
+    .social-icon {
+        font-size: 4rem;
     }
 }
 
@@ -220,10 +235,14 @@ a {
     }
     .fc-daygrid-day-number {
         color: #6c757d;
-
     }
-/*    .fc-view-harness .fc-view-harness-active {
-        height: 500px !important;
-    }*/
-
+    .fc .fc-toolbar-title {
+        width: 220px;
+    }
+    .fc-button-group {
+        margin-left: -61px;
+    }
+    .fc-event-time {
+        font-weight: normal !important;
+    }
 
