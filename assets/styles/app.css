@@ -3,13 +3,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
-
+    font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    }
+    #calendar {
+        height: calc(70vh + 12 * ((100vh - 320px) / 680));
+    }
+    .fc-event-main-frame {
+        font-size: calc(12px + 2 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 18px;
+    }
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-
+    font-size: 18px;
 }
+
+.bi {
+    color: saddlebrown;
+}
+
+/*.lead {
+    font-size: calc()
+}*/
 
 .tapeta:after {
     content:'';
@@ -66,23 +90,26 @@ a {
 }
 
 .google-play {
-    max-height: 70px;
+    max-width: 180px;
 
 }
 
 .app-store {
-    max-height: 70px;
+    max-width: 180px;
 
 }
 
 .efitness-logo {
-    max-height: 70px;
+    height: 10rem;
 }
 
 @media (max-width: 480px) {
     .hpmenu {
         background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_mobile.webp");
     }
+/*    .lead {
+        font-size: 1.1rem;
+    }*/
 /*    #rejestracja {
         align-content: space-around !important;
     }*/
@@ -97,7 +124,7 @@ a {
 @media (max-width: 767px) {
     .lead {
         text-align: center;
-        /*padding: 1em;*/
+        padding: 1em;
     }
 
 
@@ -163,18 +190,43 @@ a {
     width: 10vw;
     filter: invert(40%);
 }
+.carousel-control-next-icon {
+    animation: animName 5s linear infinite;
+    position: relative;
+}
+
+@keyframes animName {
+    0%{
+        transform: rotate(0deg);
+    }
+    3%{
+        transform: rotate(10deg);
+    }
+    6%{
+        transform: rotate(-10deg);
+    }
+    9%{
+        transform: rotate(10deg);
+    }
+    12%{
+        transform: rotate(-10deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+}
 
 .carousel-indicators [data-bs-target]{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    filter: invert(70%);
+    filter: invert(100%);
 
 }
 
 #calendar {
     max-width: 1100px;
-    height: 600px;
+    /*height: 600px;*/
 
 }
 
@@ -207,9 +259,9 @@ a {
 }
 
 @media (max-width: 500px) {
-    .fc-event-main-frame {
+/*    .fc-event-main-frame {
         font-size: .6rem;
-    }
+    }*/
     .social {
         flex-direction: column;
 
@@ -225,24 +277,31 @@ a {
     }
 }
 
-    .fc-toolbar-chunk {
-        margin-bottom: .5rem;
-    }
+.fc-toolbar-chunk {
+    margin-bottom: .5rem;
+}
 
-    .fc-col-header-cell-cushion {
-        color: #6c757d;
-        font-size: 1rem;
-    }
-    .fc-daygrid-day-number {
-        color: #6c757d;
-    }
-    .fc .fc-toolbar-title {
-        width: 220px;
-    }
-    .fc-button-group {
-        margin-left: -61px;
-    }
-    .fc-event-time {
-        font-weight: normal !important;
-    }
-
+.fc-col-header-cell-cushion {
+    color: #6c757d;
+    font-size: 1rem;
+}
+.fc-daygrid-day-number {
+    color: #6c757d;
+}
+.fc-toolbar-title {
+    width: 236px;
+}
+.fc-button-group {
+    margin-left: -77px;
+}
+.fc-event-time {
+    font-weight: normal !important;
+}
+.fc-event[href] {
+    cursor: default;
+}
+.fc-daygrid-event {
+    word-wrap: normal !important;
+    white-space: normal !important;
+    align-items: normal !important;
+}

@@ -34,6 +34,7 @@ $(document).ready(function () {
 
 function checkitem() {
     var $this = $('#carousel');
+    console.log('dupa');
     if($('.carousel-inner .carousel-item:first').hasClass('active')) {
         $this.children('.carousel-control-prev').hide();
         $this.children('.carousel-control-next').show();
@@ -43,26 +44,13 @@ function checkitem() {
     } else {
         $this.children('.carousel-control-prev').show();
         $this.children('.carousel-control-next').show();
+
     }
 }
 
 // koniec //
 
 //grafik//
-
-/*    const calendarEl = document.getElementById('calendar')
-    const calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: [
-            googleCalendarPlugin,
-            dayGridPlugin
-        ],
-        initialView: 'dayGridMonth',
-        events: {
-            googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com'
-        }
-    })
-
-    calendar.render()*/
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -87,8 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
         locale: 'plLocale',
         firstDay: 1,
 
-        events: {
-            googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com'
+        eventSources: [
+            {
+                googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
+            },
+            {
+                /*googleCalendarId: 'pl.polish#holiday@group.v.calendar.google.com',
+                color: 'green'*/
+            },
+        ],
+        eventClick: function(info) {
+            info.jsEvent.preventDefault(); // don't let the browser navigate
         },
 
         /*events: [
@@ -220,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
         ],*/
         eventDisplay: 'block',
-        eventOrder: 'start,title',
+        eventOrder: 'start,title,description',
         eventTimeFormat:
             {
                 hour: '2-digit',
@@ -248,5 +245,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
 });
-
-
