@@ -7,7 +7,7 @@ html {
 }
 @media screen and (min-width: 320px) {
     html {
-        font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+        font-size: calc(12px + 6 * ((100vw - 320px) / 680));
     }
     #calendar {
         height: calc(70vh + 12 * ((100vh - 320px) / 680));
@@ -16,15 +16,16 @@ html {
         font-size: calc(12px + 2 * ((100vw - 320px) / 680));
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
     html {
-        font-size: 18px;
+        font-size: calc(12px + 6 * ((100vw - 768px) / 680));
     }
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background-color: #fef9f3;
 }
 
 .bi {
@@ -35,7 +36,7 @@ body {
     font-size: calc()
 }*/
 
-.tapeta:after {
+/*.tapeta:after {
     content:'';
     background-image: url('file:///C:/Projekty/jogawmarkach/public/img/Kasia_logo_ok_B_W_tlo.webp'), linear-gradient(to right, #f8cd96, #f8cd96);
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ body {
     left: 0;
     z-index:-1;
     opacity: 0.1;
-}
+}*/
 
 .main {
     position: relative;
@@ -122,11 +123,13 @@ a {
 }
 
 @media (max-width: 767px) {
-    .lead {
+/*    .lead {
         text-align: center;
         padding: 1em;
+    }*/
+    .main {
+        scroll-snap-type: y;
     }
-
 
 }
 
@@ -182,13 +185,14 @@ a {
 
 .container-fluid {
     scroll-snap-align: start;
+
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     height: 25vh;
     width: 10vw;
-    filter: invert(40%);
+    filter: invert(100%);
 }
 .carousel-control-next-icon {
     animation: animName 5s linear infinite;
@@ -258,6 +262,13 @@ a {
 
 }
 
+@media (max-width: 575px) {
+    .fota {
+        margin-bottom: 20px;
+    }
+}
+
+
 @media (max-width: 500px) {
 /*    .fc-event-main-frame {
         font-size: .6rem;
@@ -268,6 +279,10 @@ a {
     }
     .social-icon {
         font-size: 4rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 10vh;
     }
 }
 
@@ -305,3 +320,13 @@ a {
     white-space: normal !important;
     align-items: normal !important;
 }
+.slajd {
+    min-height: 80vh;
+    margin-bottom: 20vh;
+}
+
+#gradient {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+
