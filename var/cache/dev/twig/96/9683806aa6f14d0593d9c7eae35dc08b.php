@@ -75,13 +75,14 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
         // line 21
         echo "    </head>
     <body>
-        <div class=\"tapeta\">
-            ";
+        ";
         // line 24
+        echo "            ";
         $this->displayBlock('body', $context, $blocks);
         // line 25
-        echo "        </div>
-    </body>
+        echo "        ";
+        // line 26
+        echo "    </body>
 </html>
 ";
         
@@ -196,7 +197,7 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
      */
     public function getDebugInfo()
     {
-        return array (  161 => 24,  148 => 19,  138 => 18,  125 => 15,  115 => 14,  96 => 10,  83 => 25,  81 => 24,  76 => 21,  74 => 18,  71 => 17,  69 => 14,  66 => 13,  62 => 11,  58 => 10,  47 => 1,);
+        return array (  162 => 24,  149 => 19,  139 => 18,  126 => 15,  116 => 14,  97 => 10,  85 => 26,  83 => 25,  80 => 24,  76 => 21,  74 => 18,  71 => 17,  69 => 14,  66 => 13,  62 => 11,  58 => 10,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -223,9 +224,9 @@ class __TwigTemplate_05dc6e664f2b7bc3cf75de4b3fb57dba extends Template
         {% endblock %}
     </head>
     <body>
-        <div class=\"tapeta\">
+        {#<div class=\"tapeta\">#}
             {% block body %}{% endblock %}
-        </div>
+        {#</div>#}
     </body>
 </html>
 ", "base.html.twig", "C:\\Projekty\\jogawmarkach\\templates\\base.html.twig");

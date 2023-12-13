@@ -14,14 +14,25 @@ import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import aos from "aos";
 
 const $ = require('jquery');
 // this "modifies" the jquery module: adding behavior to it
 // the bootstrap module doesn't export/return anything
 require('bootstrap');
 
-// chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
 
+/*AOS.init({
+    duration: 1000,
+    easing: 'linear',
+    offset: 500
+});*/
+
+
+
+// chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
 const myCarousel = document.getElementById('carousel')
 
 myCarousel.addEventListener('slid.bs.carousel', evt => {
@@ -70,7 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         initialView: 'dayGridMonth',
         initialDate: new Date(),
-        eventColor: '#f8cd96',
+        /*eventColor: '#f8cd96',*/
+        eventColor: '#8b4513',
         locale: 'plLocale',
         firstDay: 1,
 
@@ -86,135 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         eventClick: function(info) {
             info.jsEvent.preventDefault(); // don't let the browser navigate
         },
-
-        /*events: [
-            {
-                title: 'Joga',
-                start: '2023-12-02T10:00:00',
-                end: '2023-12-02T10:55:00',
-
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-05T20:00:00',
-                end: '2023-12-05T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-07T20:00:00',
-                end: '2023-12-07T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-09T10:00:00',
-                end: '2023-12-09T10:55:00'
-            },
-            {
-                title: 'Pilates',
-                start: '2023-12-09T11:00:00',
-                end: '2023-12-09T11:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-12T20:00:00',
-                end: '2023-12-12T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-14T20:00:00',
-                end: '2023-12-14T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-16T10:00:00',
-                end: '2023-12-16T10:55:00'
-            },
-            {
-                title: 'Pilates',
-                start: '2023-12-16T11:00:00',
-                end: '2023-12-16T11:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-19T20:00:00',
-                end: '2023-12-19T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-21T20:00:00',
-                end: '2023-12-21T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-23T10:00:00',
-                end: '2023-12-23T10:55:00'
-            },
-            {
-                title: 'Pilates',
-                start: '2023-12-23T11:00:00',
-                end: '2023-12-23T11:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-28T20:00:00',
-                end: '2023-12-28T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2023-12-30T10:00:00',
-                end: '2023-12-30T10:55:00'
-            },
-            {
-                title: 'Pilates',
-                start: '2023-12-30T11:00:00',
-                end: '2023-12-30T11:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-02T20:00:00',
-                end: '2024-01-02T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-04T20:00:00',
-                end: '2024-01-04T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-09T20:00:00',
-                end: '2024-01-09T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-11T20:00:00',
-                end: '2024-01-11T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-16T20:00:00',
-                end: '2024-01-16T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-18T20:00:00',
-                end: '2024-01-18T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-23T20:00:00',
-                end: '2024-01-23T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-25T20:00:00',
-                end: '2024-01-25T20:55:00'
-            },
-            {
-                title: 'Joga',
-                start: '2024-01-30T20:00:00',
-                end: '2024-01-30T20:55:00'
-            },
-        ],*/
         eventDisplay: 'block',
         eventOrder: 'start,title,description',
         eventTimeFormat:

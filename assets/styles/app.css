@@ -26,11 +26,34 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background-color: #fef9f3;
+    overflow-x: hidden;
 }
 
 .bi {
     color: saddlebrown;
 }
+
+/*#grafik {
+    content:'';
+    background-image: url('file:///C:/Projekty/jogawmarkach/public/img/pexels-pixabay-315791_1600x1000.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:10000;
+    opacity: 0.1;
+
+}
+
+#calendar {
+    background-color: #fef9f3;
+    border-radius: 0 0 10px 0;
+}*/
 
 /*.lead {
     font-size: calc()
@@ -59,7 +82,7 @@ body {
     scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
-    overflow-x: hidden;
+
 }
 
 .linki {

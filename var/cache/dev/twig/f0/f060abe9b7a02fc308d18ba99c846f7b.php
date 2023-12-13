@@ -75,7 +75,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
     }
 
-    // line 5
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,11 +85,11 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 16
         echo "
     <div class=\"main\">
         <div class=\"hpmenu container-fluid\">
-            <nav class=\"navbar navbar-expand-md\">
+            <nav class=\"navbar navbar-expand-lg\">
                 <div class=\"container\">
                     <a class=\"navbar-brand\" href=\"#\"></a>
                     <button class=\"navbar-toggler ham\" type=\"button\" data-bs-toggle=\"collapse\"
@@ -111,31 +111,14 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
         <div class=\"background\">
 
-            <div id=\"omnie\"
-                 class=\"container-fluid p-0\">
-                ";
-        // line 49
-        echo "            </div>
+            <div id=\"omnie\" class=\"container-fluid p-0 min-vh-100\"></div>
 
-            <div id=\"oferta\" class=\"container-fluid p-0\">
+            <div id=\"oferta\" class=\"container-fluid p-0\"></div>
 
-                ";
-        // line 66
-        echo "
-                ";
-        // line 86
-        echo "            </div>
+            <div id=\"oferta-pilates\" class=\"container-fluid p-0\"></div>
 
-            <div id=\"oferta-pilates\" class=\"container-fluid p-0\">
-                ";
-        // line 109
-        echo "            </div>
-
-";
-        // line 132
-        echo "
             <div id=\"grafik\"
-                 class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
+                 class=\"grafik container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
                 <div class=\"container text-center display-4\">
                     <p class=\"fw-bold\">
                         Grafik
@@ -144,6 +127,45 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                 <div id=\"calendar\" class=\"container mh-100\"></div>
 
+            </div>
+
+            <div id=\"cennik\"
+                 class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
+                <div class=\"container text-center mb-5 display-4\">
+                    <p class=\"fw-bold\">
+                        Cennik
+                    </p>
+                </div>
+
+                <div class=\"container col-md-6\">
+                    <table class=\"table\">
+                        <thead>
+                        <tr class=\"\">
+                            <th class=\"table-color\" scope=\"col\">Usługa</th>
+                            <th class=\"table-color text-center\" scope=\"col\">Cena</th>
+                        </tr>
+                        </thead>
+                        <tbody class=\"table-group-divider\">
+                        <tr>
+                            <th class=\"table-color\" scope=\"row\">Joga/pilates - wejście jednorazowe</th>
+                            <td class=\"table-color text-center\">35&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class=\"table-color\" scope=\"row\">Joga - 4&nbspwejścia / 30&nbspdni</th>
+                            <td class=\"table-color text-center\">120&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class=\"table-color\" scope=\"row\">Joga - 8&nbspwejść / 30&nbspdni</th>
+                            <td class=\"table-color text-center\">200&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class=\"table-color\" scope=\"row\">Pilates - 4&nbspwejścia / 45&nbspdni</th>
+                            <td class=\"table-color text-center\">120&nbspzł</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class=\"col-lg p-2\">Rozliczamy się na miejscu i tylko gotówką lub blikiem na numer telefonu.</div>
+                </div>
             </div>
 
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -169,7 +191,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                 <div class=\"col-lg-6 d-inline lead text-center\">
                                     <div class=\"text-center p-4\"><img class=\"efitness-logo rounded-3\"
                                                                   src=\"";
-        // line 167
+        // line 120
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo.webp"), "html", null, true);
         echo "\"></div>
                                     <p>Do rejestracji w klubie oraz rezerwacji miejsc na poszczególne zajęcia polecamy w
@@ -180,11 +202,11 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                                     <div class=\"d-flex flex-column\">
                                         <a href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"m-2 google-play\" src=\"";
-        // line 175
+        // line 128
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
         echo "\"></a>
                                         <a href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"m-2 app-store\" src=\"";
-        // line 176
+        // line 129
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
         echo "\"></a>
                                     </div>
@@ -257,6 +279,128 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </button>
             </div>
 
+            <footer id=\"kontakt\"
+                    class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3\">
+                <span><img style=\"width: 25rem\" src=\"";
+        // line 202
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Kasia_logo_ok_KONTRA_saddlebrown.png"), "html", null, true);
+        echo "\"></span>
+                <div class=\"social d-flex justify-content-around\">
+
+
+                    <span class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
+                                         href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
+                                    class=\"bi bi-facebook\"></i></a></span>
+                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                         href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
+                                    class=\"bi bi-instagram\"></i></a></span>
+                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                         href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
+                                    class=\"bi bi-messenger\"></i></a></span>
+                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                         href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
+                                         title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
+                </div>
+                ";
+        // line 222
+        echo "
+            </footer>
+
+        </div>
+
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "hp.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  306 => 222,  286 => 202,  210 => 129,  206 => 128,  195 => 120,  89 => 16,  79 => 15,  59 => 3,  36 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} | Kasia Latek{% endblock %}
+
+{#{% block body %}
+    <div class=\"container-fluid\" style=\"height: 5000px;\">
+        <div class=\"container border-5 bg-primary\" style=\"height: 100px; width: 100vw\"></div>
+        <div data-aos=\"fade-up\" data-aos-easing=\"linear\" data-aos-duration=\"1500\" class=\"container border-5 bg-primary\" style=\"height: 100px; width: 100vw; position: absolute; bottom: -200px; left: 0\"></div>
+    </div>
+
+
+
+{% endblock %}#}
+
+{% block body %}
+
+    <div class=\"main\">
+        <div class=\"hpmenu container-fluid\">
+            <nav class=\"navbar navbar-expand-lg\">
+                <div class=\"container\">
+                    <a class=\"navbar-brand\" href=\"#\"></a>
+                    <button class=\"navbar-toggler ham\" type=\"button\" data-bs-toggle=\"collapse\"
+                            data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"
+                            aria-label=\"Toggle navigation\">
+                        <span class=\"navbar-toggler-icon\"></span>
+                    </button>
+                    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">
+                        <a class=\"nav-link\" aria-current=\"page\" href=\"#omnie\">O mnie</a>
+                        <a class=\"nav-link\" href=\"#oferta\">Oferta</a>
+                        <a class=\"nav-link\" href=\"#grafik\">Grafik</a>
+                        <a class=\"nav-link\" href=\"#rejestracja\">Rejestracja</a>
+                        <a class=\"nav-link\" href=\"#cennik\">Cennik</a>
+                        <a class=\"nav-link\" href=\"#kontakt\">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class=\"background\">
+
+            <div id=\"omnie\" class=\"container-fluid p-0 min-vh-100\"></div>
+
+            <div id=\"oferta\" class=\"container-fluid p-0\"></div>
+
+            <div id=\"oferta-pilates\" class=\"container-fluid p-0\"></div>
+
+            <div id=\"grafik\"
+                 class=\"grafik container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
+                <div class=\"container text-center display-4\">
+                    <p class=\"fw-bold\">
+                        Grafik
+                    </p>
+                </div>
+
+                <div id=\"calendar\" class=\"container mh-100\"></div>
+
+            </div>
+
             <div id=\"cennik\"
                  class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
                 <div class=\"container text-center mb-5 display-4\">
@@ -294,213 +438,6 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     </table>
                     <div class=\"col-lg p-2\">Rozliczamy się na miejscu i tylko gotówką lub blikiem na numer telefonu.</div>
                 </div>
-            </div>
-
-            <footer id=\"kontakt\"
-                    class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3\">
-                <span><img style=\"width: 25rem\" src=\"";
-        // line 288
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Kasia_logo_ok_KONTRA.png"), "html", null, true);
-        echo "\"></span>
-                <div class=\"social d-flex justify-content-around\">
-
-
-                    <span class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
-                                         href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
-                                    class=\"bi bi-facebook\"></i></a></span>
-                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                         href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
-                                    class=\"bi bi-instagram\"></i></a></span>
-                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                         href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
-                                    class=\"bi bi-messenger\"></i></a></span>
-                    <span class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                         href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
-                                         title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
-                </div>
-                 ";
-        // line 308
-        echo "            </footer>
-
-        </div>
-
-";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    /**
-     * @codeCoverageIgnore
-     */
-    public function getTemplateName()
-    {
-        return "hp.html.twig";
-    }
-
-    /**
-     * @codeCoverageIgnore
-     */
-    public function isTraitable()
-    {
-        return false;
-    }
-
-    /**
-     * @codeCoverageIgnore
-     */
-    public function getDebugInfo()
-    {
-        return array (  323 => 308,  303 => 288,  188 => 176,  184 => 175,  173 => 167,  136 => 132,  132 => 109,  127 => 86,  124 => 66,  118 => 49,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
-    }
-
-    public function getSourceContext()
-    {
-        return new Source("{% extends 'base.html.twig' %}
-
-{% block title %}{{ parent() }} | Kasia Latek{% endblock %}
-
-{% block body %}
-
-    <div class=\"main\">
-        <div class=\"hpmenu container-fluid\">
-            <nav class=\"navbar navbar-expand-md\">
-                <div class=\"container\">
-                    <a class=\"navbar-brand\" href=\"#\"></a>
-                    <button class=\"navbar-toggler ham\" type=\"button\" data-bs-toggle=\"collapse\"
-                            data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"
-                            aria-label=\"Toggle navigation\">
-                        <span class=\"navbar-toggler-icon\"></span>
-                    </button>
-                    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">
-                        <a class=\"nav-link\" aria-current=\"page\" href=\"#omnie\">O mnie</a>
-                        <a class=\"nav-link\" href=\"#oferta\">Oferta</a>
-                        <a class=\"nav-link\" href=\"#grafik\">Grafik</a>
-                        <a class=\"nav-link\" href=\"#rejestracja\">Rejestracja</a>
-                        <a class=\"nav-link\" href=\"#cennik\">Cennik</a>
-                        <a class=\"nav-link\" href=\"#kontakt\">Kontakt</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class=\"background\">
-
-            <div id=\"omnie\"
-                 class=\"container-fluid p-0\">
-                {#<div class=\"container text-center mb-5 display-4\">
-                    <p class=\"fw-bold\">
-                        O mnie
-                    </p>
-                </div>
-
-                <div class=\"container\">
-                    <div class=\"row align-items-center\">
-                        <div class=\"col-md-4 text-center\">
-                            <img width=\"75%\" src=\"{{ asset('img/kasiafot_okr_1.webp') }}\">
-                        </div>
-                        <div class=\"col-md-8 lead\">
-                            <p>Instruktor fitness. Katarzyna Latek. Instruktorka pilates, entuzjastka jogi i strechingu, pasjonatka wielu form ćwiczeń z zakresu body&mind.</p>
-                        </div>
-                    </div>
-                </div>#}
-            </div>
-
-            <div id=\"oferta\" class=\"container-fluid p-0\">
-
-                {#<div class=\"card text-bg-dark border-0 rounded-0\">
-                    <picture>
-                        <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">
-                        <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">
-                        <img class=\"img-fluid\" src=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">
-                    </picture>
-                    <div class=\"col-md-6 card-img-overlay d-flex flex-column\" style=\"margin-left: 50%\">
-                        <h5 class=\"display-4\">JOGA</h5>
-                        <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>
-                        <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>
-                        <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>
-                    </div>
-                </div>#}
-
-                {#<div class=\"card rounded-0 bg-transparent border-0\">
-                    <div class=\"row g-0\">
-                        <div class=\"col-md-6\">
-                            <picture>
-                                <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">
-                                <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">
-                                <img class=\"img-fluid\" src=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">
-                            </picture>
-                        </div>
-                        <div class=\"col-md-6\">
-                            <div class=\"card-body\">
-                                <h5 class=\"display-4\">JOGA</h5>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>#}
-            </div>
-
-            <div id=\"oferta-pilates\" class=\"container-fluid p-0\">
-                {#<div class=\"card rounded-0 bg-transparent border-0\">
-                    <div class=\"row g-0\">
-                        <div class=\"col-md-6 order-md-1\">
-                            <picture>
-                                <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-andrea-piacquadio-868483_800x800.webp') }}\">
-                                <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-andrea-piacquadio-868483_800x1000.webp') }}\">
-                                <img class=\"img-fluid\" src=\"{{ asset('img/pexels-andrea-piacquadio-868483_800x1000.webp') }}\">
-                            </picture>
-                        </div>
-                        <div class=\"col-md-6\">
-                            <div class=\"card-body\">
-                                <h5 class=\"display-4\">PILATES</h5>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak,&nbspistnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>
-                                <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>#}
-            </div>
-
-{#            <div id=\"oferta-pilates\"
-                 class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
-                <div class=\"container text-center display-4\">
-                    <p class=\"fw-bold\">
-                        Pilates
-                    </p>
-                </div>
-
-                <div class=\"container\">
-                    <div class=\"row align-items-center\">
-                        <div class=\"col-md-8 lead\">
-                            <p>Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>
-                            <p>Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>
-                            <p>Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>
-                        </div>
-                        <div class=\"col-md-4 text-center\">
-                            <img width=\"75%\" src=\"{{ asset('img/kasiafot_okr_1.webp') }}\">
-                        </div>
-                    </div>
-                </div>
-            </div>#}
-
-            <div id=\"grafik\"
-                 class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
-                <div class=\"container text-center display-4\">
-                    <p class=\"fw-bold\">
-                        Grafik
-                    </p>
-                </div>
-
-                <div id=\"calendar\" class=\"container mh-100\"></div>
-
             </div>
 
             <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -605,48 +542,9 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                 </button>
             </div>
 
-            <div id=\"cennik\"
-                 class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100\">
-                <div class=\"container text-center mb-5 display-4\">
-                    <p class=\"fw-bold\">
-                        Cennik
-                    </p>
-                </div>
-
-                <div class=\"container col-md-6\">
-                    <table class=\"table\">
-                        <thead>
-                        <tr class=\"\">
-                            <th class=\"table-color\" scope=\"col\">Usługa</th>
-                            <th class=\"table-color text-center\" scope=\"col\">Cena</th>
-                        </tr>
-                        </thead>
-                        <tbody class=\"table-group-divider\">
-                        <tr>
-                            <th class=\"table-color\" scope=\"row\">Joga/pilates - wejście jednorazowe</th>
-                            <td class=\"table-color text-center\">35&nbspzł</td>
-                        </tr>
-                        <tr>
-                            <th class=\"table-color\" scope=\"row\">Joga - 4&nbspwejścia / 30&nbspdni</th>
-                            <td class=\"table-color text-center\">120&nbspzł</td>
-                        </tr>
-                        <tr>
-                            <th class=\"table-color\" scope=\"row\">Joga - 8&nbspwejść / 30&nbspdni</th>
-                            <td class=\"table-color text-center\">200&nbspzł</td>
-                        </tr>
-                        <tr>
-                            <th class=\"table-color\" scope=\"row\">Pilates - 4&nbspwejścia / 45&nbspdni</th>
-                            <td class=\"table-color text-center\">120&nbspzł</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class=\"col-lg p-2\">Rozliczamy się na miejscu i tylko gotówką lub blikiem na numer telefonu.</div>
-                </div>
-            </div>
-
             <footer id=\"kontakt\"
                     class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100 z-3\">
-                <span><img style=\"width: 25rem\" src=\"{{ asset('img/Kasia_logo_ok_KONTRA.png') }}\"></span>
+                <span><img style=\"width: 25rem\" src=\"{{ asset('img/Kasia_logo_ok_KONTRA_saddlebrown.png') }}\"></span>
                 <div class=\"social d-flex justify-content-around\">
 
 
@@ -663,9 +561,10 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                          href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
                                          title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
                 </div>
-                 {#<div class=\"col-md-4 text-center\">
+                {#<div class=\"col-md-4 text-center\">
                     <span class=\"mb-3 mb-md-0 text-body-secondary\">&copy; 2023 BenMedia</span>
                 </div>#}
+
             </footer>
 
         </div>
