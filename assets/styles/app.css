@@ -260,6 +260,7 @@ a {
 @media (min-width: 700px) {
     .fc .fc-toolbar-title {
         text-align: left;
+        
     }
 }
 
@@ -271,6 +272,7 @@ a {
 
     .fc .fc-toolbar-title {
         text-align: center;
+        font-size: 1.5rem;
     }
     .fc-button-group {
         margin-left: 0px !important;
@@ -328,6 +330,7 @@ a {
 }
 .fc-toolbar-title {
     width: 236px;
+    
 }
 .fc-button-group {
     margin-left: -77px;
