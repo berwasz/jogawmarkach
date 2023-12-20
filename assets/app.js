@@ -16,7 +16,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import aos from "aos";
+
 
 const $ = require('jquery');
 // this "modifies" the jquery module: adding behavior to it
@@ -24,11 +24,12 @@ const $ = require('jquery');
 require('bootstrap');
 
 
-/*AOS.init({
-    duration: 1000,
+AOS.init({
+    duration: 800,
     easing: 'linear',
-    offset: 500
-});*/
+    offset: 120,
+    once: false
+});
 
 
 
@@ -39,7 +40,7 @@ myCarousel.addEventListener('slid.bs.carousel', evt => {
     checkitem();
 });
 
-$(document).ready(function () {
+$(function () {
     checkitem();
 });
 
@@ -81,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         initialView: 'dayGridMonth',
         initialDate: new Date(),
-        /*eventColor: '#f8cd96',*/
         eventColor: '#8b4513',
         locale: 'plLocale',
         firstDay: 1,
@@ -91,8 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
             },
             {
-                /*googleCalendarId: 'pl.polish#holiday@group.v.calendar.google.com',
-                color: 'green'*/
+
             },
         ],
         eventClick: function(info) {
@@ -130,17 +129,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //zdjęcie o mmnie
 
-$(window).resize(function () {
+/* $(window).resize(function () {
     var width = $(window).width();
     if (width < 768) {
         $("#omnie").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
             "                    <div class=\"row g-0\">\n" +
             "                        <div class=\"col-md-6\">\n" +
-            /*"                            <picture>\n" +
-            "                                <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                                <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                                <img class=\"img-fluid\" src=\"img/kasia_omnie_800x800.webp\">\n" +
-            /*"                            </picture>\n" +*/
+
             "                        </div>\n" +
             "                        <div class=\"col-md-6\">\n" +
             "                            <div class=\"card-body\">\n" +
@@ -152,11 +149,9 @@ $(window).resize(function () {
             "                </div>");
     } else {
         $("#omnie").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-            /*"                    <picture>\n" +
-            "                        <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                        <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                        <img class=\"img-fluid\" src=\"img/kasia_omnie_1600x1000.webp\">\n" +
-            /*"                    </picture>\n" +*/
+
             "                    <div class=\"col-md-5 card-img-overlay d-flex flex-column p-0\">\n" +
             "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 0 10px 0\" class=\"p-3\">\n" +
             "                        <h5 class=\"display-4\">O MNIE</h5>\n" +
@@ -175,11 +170,9 @@ $(window).resize(function () {
         $("#oferta").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
             "                    <div class=\"row g-0\">\n" +
             "                        <div class=\"col-md-6\">\n" +
-            /*"                            <picture>\n" +
-            "                                <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                                <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                                <img class=\"img-fluid\" src=\"img/pexels-lucas-pezeta-9351349_800x800.webp\">\n" +
-            /*"                            </picture>\n" +*/
+
             "                        </div>\n" +
             "                        <div class=\"col-md-6\">\n" +
             "                            <div class=\"card-body\">\n" +
@@ -193,11 +186,9 @@ $(window).resize(function () {
             "                </div>");
     } else {
         $("#oferta").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-            /*"                    <picture>\n" +
-            "                        <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                        <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                        <img class=\"img-fluid\" src=\"img/pexels-lucas-pezeta-9351349_1600x1000.webp\">\n" +
-            /*"                    </picture>\n" +*/
+
             "                    <div style='margin-left: 50%' class=\"col-md-6 card-img-overlay d-flex flex-column p-0\">\n" +
             "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 0 0 10px\" class=\"p-3\">\n" +
             "                        <h5 class=\"display-4\">JOGA</h5>\n" +
@@ -218,11 +209,9 @@ $(window).resize(function () {
         $("#oferta-pilates").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
             "                    <div class=\"row g-0\">\n" +
             "                        <div class=\"col-md-6\">\n" +
-            /*"                            <picture>\n" +
-            "                                <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                                <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                                <img class=\"img-fluid\" src=\"img/pexels-andrea-piacquadio-868483_800x800.webp\">\n" +
-            /*"                            </picture>\n" +*/
+
             "                        </div>\n" +
             "                        <div class=\"col-md-6\">\n" +
             "                            <div class=\"card-body\">\n" +
@@ -236,11 +225,9 @@ $(window).resize(function () {
             "                </div>");
     } else {
         $("#oferta-pilates").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-            /*"                    <picture>\n" +
-            "                        <source media=\"(max-width:767px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_800x800.webp') }}\">\n" +
-            "                        <source media=\"(min-width:768px)\" srcset=\"{{ asset('img/pexels-lucas-pezeta-9351349_1600x1000.webp') }}\">\n" +*/
+
             "                        <img class=\"img-fluid\" src=\"img/pexels-andrea-piacquadio-868483_1600x1000.webp\">\n" +
-            /*"                    </picture>\n" +*/
+
             "                    <div class=\"col-md-6 card-img-overlay d-flex flex-column justify-content-end p-0\">\n" +
                 "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 10px 0 0\" class=\"p-3\">\n" +
                 "                        <h5 class=\"display-4\">PILATES</h5>\n" +
@@ -252,4 +239,53 @@ $(window).resize(function () {
             "                </div>");
     }
 });
-$(window).trigger('resize');
+$(window).trigger('resize'); */
+
+/* button go to top */
+
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+/* zmiana wyglądu toggle buttona */
+
+/* $(function () {
+    test();
+});
+
+$('#test').on('click', test);
+
+function test(){
+    $(this).html(function(i,old){
+        return old=='<i class="bi bi-x-lg"></i>' ?  '<i class="bi bi-list"></i>' : '<i class="bi bi-x-lg"></i>';
+    });
+} */
+
+$(function(){
+	$('#nav-icon3').on('click', function(){
+		$(this).toggleClass('open');
+	});
+});

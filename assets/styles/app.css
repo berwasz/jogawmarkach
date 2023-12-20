@@ -2,10 +2,13 @@
 @import "bootstrap-icons";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 html {
-    font-size: 14px;
+    font-size: 12px;
+    scroll-padding-top: 107.7px;
+    overflow-x: hidden;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
     html {
         font-size: calc(12px + 6 * ((100vw - 320px) / 680));
     }
@@ -29,185 +32,118 @@ body {
     overflow-x: hidden;
 }
 
+#intro {
+    background-image: url('file:///C:/Projekty/jogawmarkach/public/img/pomost_hp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
 .bi {
     color: saddlebrown;
 }
 
-/*#grafik {
-    content:'';
-    background-image: url('file:///C:/Projekty/jogawmarkach/public/img/pexels-pixabay-315791_1600x1000.webp');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index:10000;
-    opacity: 0.1;
-
-}
-
-#calendar {
-    background-color: #fef9f3;
-    border-radius: 0 0 10px 0;
-}*/
-
-/*.lead {
-    font-size: calc()
-}*/
-
-/*.tapeta:after {
-    content:'';
-    background-image: url('file:///C:/Projekty/jogawmarkach/public/img/Kasia_logo_ok_B_W_tlo.webp'), linear-gradient(to right, #f8cd96, #f8cd96);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index:-1;
-    opacity: 0.1;
-}*/
-
-.main {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    scroll-behavior: smooth;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-
-}
-
-.linki {
-    display: flex;
-    justify-content: space-around;
-}
-ul li {
-    list-style: none;
-    }
-a {
-    text-decoration: none;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-.footer {
-/*    display: flex;
-    justify-content: center;
-    align-items: center;*/
-    /*position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;*/
-    /*width: 100%;
-    height: 200px; !* Set the fixed height of the footer here *!
-    line-height: 60px; !* Vertically center the text there *!*/
-
-
-}
-
-.google-play {
-    max-width: 180px;
-
-}
-
-.app-store {
-    max-width: 180px;
-
-}
-
-.efitness-logo {
-    height: 10rem;
-}
-
-@media (max-width: 480px) {
-    .hpmenu {
-        background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_mobile.webp");
-    }
-/*    .lead {
-        font-size: 1.1rem;
-    }*/
-/*    #rejestracja {
-        align-content: space-around !important;
-    }*/
-}
-
-@media (min-width: 481px) {
-    .hpmenu {
-        background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_desktop.webp");
+@media (max-width: 400px) {
+    .fc-col-header-cell-cushion {
+        font-size: .9rem !important;
     }
 }
 
 @media (max-width: 767px) {
-/*    .lead {
+    .fc .fc-toolbar.fc-header-toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fc .fc-toolbar-title {
         text-align: center;
-        padding: 1em;
-    }*/
-    .main {
-        scroll-snap-type: y;
+        font-size: 1.5rem;
+    }
+    .fc-button-group {
+        margin-left: 0px !important;
+    }
+
+    .fc-h-event .fc-event-main-frame {
+        flex-direction: column;
+    }
+    .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+        margin-left: .75em !important;
     }
 
 }
 
-.hpmenu {
-    /*background-image: url("file:///C:/Projekty/jogawmarkach/public/img/pomost_homepage_2_desktop.webp");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 100vh;
+@media (min-width: 768px) {
+    .fc .fc-toolbar-title {
+        text-align: left;
+        
+    }
 }
 
-#cennik {
-    /*padding-bottom: 300px;*/
+.fc-toolbar-chunk {
+    margin-bottom: .5rem;
+}
+
+.fc-col-header-cell-cushion, .fc-daygrid-day-number {
+    color: #6c757d;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.fc-toolbar-title {
+    width: 236px;
+    
+}
+.fc-button-group {
+    margin-left: -77px;
+}
+.fc-event-time {
+    font-weight: normal !important;
+}
+.fc-event[href] {
+    cursor: default;
+}
+.fc-daygrid-event {
+    word-wrap: normal !important;
+    white-space: normal !important;
+    align-items: normal !important;
+}
+
+.fc-event-title {
+    font-size: .9rem;
+}
+
+#omnie {
+    min-height: 60vh;
+}
+
+.table-color {
+    background-color: transparent !important;
+    font-size: 1rem !important;
 }
 
 #kontakt {
     background-color: #f8cd96;
+    margin-top: 6rem;
 }
 
 .social-icon {
     font-size: 4rem;
 }
 
-.onepage {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 1px;
+.slajd {
+    height: 80vh;
 }
 
-.navbar-nav {
-    justify-content: end;
-}
-.navbar-toggler {
+@media (max-width: 991px) {
+    .slajd {
+        height: 70vh;
+        margin-top: 40px;
+    }
 
-    /*margin-right: 1em;*/
-}
-
-.nav-link {
-    text-align: end;
-    color: white;
-    font-size: 1.5em;
-    font-weight: 700;
-    padding-top: .5em;
-    margin-left: .75em;
-}
-
-.table-color {
-    background-color: transparent !important;
-}
-
-.container-fluid {
-    scroll-snap-align: start;
+    .carousel-indicators {
+        bottom: -3rem !important;
+        margin-top: 0;
+    }
 
 }
 
@@ -243,116 +179,133 @@ a {
     }
 }
 
+.carousel-indicators {
+    bottom: 0;
+    margin-bottom: 0;
+    
+}
+
 .carousel-indicators [data-bs-target]{
     height: 20px;
     width: 20px;
     border-radius: 50%;
     filter: invert(100%);
+}
+
+.carousel-indicators button {
+    background-color:saddlebrown !important;
+}
+
+.carousel-indicators .active {
+    background-color:saddlebrown !important;
+}
+
+.google-play {
+    max-width: 180px;
 
 }
 
-#calendar {
-    max-width: 1100px;
-    /*height: 600px;*/
+.app-store {
+    max-width: 180px;
 
 }
 
-@media (min-width: 700px) {
-    .fc .fc-toolbar-title {
-        text-align: left;
-        
-    }
+.efitness-logo {
+    height: 8rem;
 }
 
-@media (max-width: 700px) {
-    .fc .fc-toolbar.fc-header-toolbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .fc .fc-toolbar-title {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .fc-button-group {
-        margin-left: 0px !important;
-    }
-
-    .fc-h-event .fc-event-main-frame {
-        flex-direction: column;
-    }
-    .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
-        margin-left: .75em !important;
-    }
-
-}
-
-@media (max-width: 575px) {
-    .fota {
-        margin-bottom: 20px;
-    }
-}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    background: rgba(139, 69, 19, .6);
+    width: 4rem;
+    height: 4rem;
+  }
 
 
-@media (max-width: 500px) {
-/*    .fc-event-main-frame {
-        font-size: .6rem;
-    }*/
-    .social {
-        flex-direction: column;
-
-    }
-    .social-icon {
-        font-size: 4rem;
-    }
-
-    .carousel-indicators {
-        margin-bottom: 10vh;
-    }
+  * {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  /* Icon 1 */
+  
+  #nav-icon3 {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    /* margin: 50px auto; */
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: #f8cd96;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
 }
-
-@media (max-width: 400px) {
-    .fc-col-header-cell-cushion {
-        font-size: .8rem !important;
-    }
-}
-
-.fc-toolbar-chunk {
-    margin-bottom: .5rem;
-}
-
-.fc-col-header-cell-cushion {
-    color: #6c757d;
-    font-size: 1rem;
-}
-.fc-daygrid-day-number {
-    color: #6c757d;
-}
-.fc-toolbar-title {
-    width: 236px;
-    
-}
-.fc-button-group {
-    margin-left: -77px;
-}
-.fc-event-time {
-    font-weight: normal !important;
-}
-.fc-event[href] {
-    cursor: default;
-}
-.fc-daygrid-event {
-    word-wrap: normal !important;
-    white-space: normal !important;
-    align-items: normal !important;
-}
-.slajd {
-    min-height: 80vh;
-    margin-bottom: 20vh;
-}
-
-#gradient {
-    background-color: rgba(255, 0, 0, 0.4);
-}
-
-
+  
+  /* Icon 3 */
+  
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 13px;
+  }
+  
+  #nav-icon3 span:nth-child(4) {
+    top: 25px;
+  }
+  
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
