@@ -103,7 +103,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     Kasia Latek | Pilates i joga
                     </a>
                     <div class=\"d-flex justify-content-end\">
-                        <div id=\"nav-icon3\" class=\"\" type=\"\" data-bs-toggle=\"collapse\" data-bs-target=\"#myNavbar7\">
+                        <div id=\"nav-icon3\" class=\"navbar-toggler\" type=\"\" data-bs-toggle=\"collapse\" data-bs-target=\"#myNavbar7\">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -482,7 +482,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                     Kasia Latek | Pilates i joga
                     </a>
                     <div class=\"d-flex justify-content-end\">
-                        <div id=\"nav-icon3\" class=\"\" type=\"\" data-bs-toggle=\"collapse\" data-bs-target=\"#myNavbar7\">
+                        <div id=\"nav-icon3\" class=\"navbar-toggler\" type=\"\" data-bs-toggle=\"collapse\" data-bs-target=\"#myNavbar7\">
                             <span></span>
                             <span></span>
                             <span></span>

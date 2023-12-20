@@ -249,7 +249,10 @@ body {
     transition: .5s ease-in-out;
     cursor: pointer;
   }
-  
+
+.navbar-toggler {
+    border: none;
+}
   
 #nav-icon3 span {
     display: block;
