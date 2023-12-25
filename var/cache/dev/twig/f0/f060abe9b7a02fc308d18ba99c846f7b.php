@@ -89,7 +89,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         echo "
  <div class=\"container-fluid d-flex flex-column p-0\">
 
-    <button type=\"button\" class=\"btn z-3\" id=\"btn-back-to-top\">
+    <button type=\"button\" class=\"btn shadow z-3\" id=\"btn-back-to-top\">
         <i style=\"color: #fef9f3 !important;\" class=\"bi bi-arrow-up h1\"></i>
     </button>
 
@@ -111,13 +111,13 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                         </div>
                     </div>
                 
-                <div class=\"collapse navbar-collapse flex-grow-1 text-end\" id=\"myNavbar7\">
+                <div class=\"collapse navbar-collapse flex-grow-1 text-center\" id=\"myNavbar7\">
                     <ul class=\"navbar-nav ms-auto flex-nowrap\">
                         <li class=\"nav-item\">
                             <a href=\"#\" class=\"nav-link\"><i class=\"bi bi-house-door\"></i></a>
                         </li>
                         <li class=\"nav-item\">
-                            <a href=\"#omnie\" class=\"nav-link\">O mnie</a>
+                            <a href=\"#omnie\" class=\"nav-link\" >O mnie</a>
                         </li>
                         <li class=\"nav-item\">
                             <a href=\"#oferta\" class=\"nav-link\">Oferta</a>
@@ -468,7 +468,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
  <div class=\"container-fluid d-flex flex-column p-0\">
 
-    <button type=\"button\" class=\"btn z-3\" id=\"btn-back-to-top\">
+    <button type=\"button\" class=\"btn shadow z-3\" id=\"btn-back-to-top\">
         <i style=\"color: #fef9f3 !important;\" class=\"bi bi-arrow-up h1\"></i>
     </button>
 
@@ -490,13 +490,13 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                         </div>
                     </div>
                 
-                <div class=\"collapse navbar-collapse flex-grow-1 text-end\" id=\"myNavbar7\">
+                <div class=\"collapse navbar-collapse flex-grow-1 text-center\" id=\"myNavbar7\">
                     <ul class=\"navbar-nav ms-auto flex-nowrap\">
                         <li class=\"nav-item\">
                             <a href=\"#\" class=\"nav-link\"><i class=\"bi bi-house-door\"></i></a>
                         </li>
                         <li class=\"nav-item\">
-                            <a href=\"#omnie\" class=\"nav-link\">O mnie</a>
+                            <a href=\"#omnie\" class=\"nav-link\" >O mnie</a>
                         </li>
                         <li class=\"nav-item\">
                             <a href=\"#oferta\" class=\"nav-link\">Oferta</a>

@@ -134,6 +134,10 @@ body {
     height: 80vh;
 }
 
+.nav-link {
+    font-size: 1.25rem;
+}
+
 @media (max-width: 991px) {
     .slajd {
         height: 70vh;
@@ -145,7 +149,14 @@ body {
         margin-top: 0;
     }
 
+    .nav-link {
+        font-size: 1.5rem;
+        border-top: 1px solid #f8cd96;
+    }
+
 }
+
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -312,3 +323,5 @@ body {
     width: 0%;
     left: 50%;
   }
+
+

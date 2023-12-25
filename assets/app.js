@@ -284,8 +284,34 @@ function test(){
     });
 } */
 
-$(function(){
-	$('#nav-icon3').on('click', function(){
-		$(this).toggleClass('open');
-	});
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('myNavbar7')
+const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+
+$(function () {
+    tog();
 });
+
+/* $('#nav-icon3').on('click', tog); */
+
+function tog() {
+    $(this).toggleClass('open');
+    
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            bsCollapse.toggle();
+            })
+        });
+}
+    
+
+
+
+   
+
+
+
+
+
