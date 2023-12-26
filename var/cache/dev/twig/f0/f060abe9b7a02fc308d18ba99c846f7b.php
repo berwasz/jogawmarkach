@@ -174,7 +174,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: O mnie-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
       <!--Section: Oferta-->
       <section id=\"oferta\">
@@ -232,7 +232,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: Oferta-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
       <!--Section: Grafik-->
       <section id=\"grafik\">
@@ -246,7 +246,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: Grafik-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
     <!--Section: Cennik-->
     <section id=\"cennik\">
@@ -286,7 +286,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 </section>
     <!--Section: Cennik-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
     <!--Section: Rejestracja-->
     <section>
         <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -297,7 +297,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                         <div class=\"carousel-item active\">
                             <div id=\"rejestracja\" class=\"slajd container d-flex flex-column align-items-center justify-content-center col-9\">
-                                <h4 data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"display-2 mb-5 text-center\"><strong>Rejestracja</strong></h4>
+                                <h4 data-aos=\"fade-up\" data-aos-offset=\"240\" class=\"display-2 mb-5 text-center\"><strong>Rejestracja</strong></h4>
                                 <div data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"row align-items-center\">
 
                                     <div class=\"col-lg-6 d-inline lead\">
@@ -396,12 +396,13 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         </div>
         
     </section>
-  </main>
-
-  <footer data-aos=\"zoom-in\" data-aos-offset=\"200\" id=\"kontakt\"
+     
+    </main>
+    
+    <footer data-aos=\"zoom-in\" data-aos-offset=\"200\" id=\"kontakt\"
         class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100\">
     <span><img data-aos=\"fade-up\" style=\"width: 25rem\" src=\"";
-        // line 309
+        // line 310
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Kasia_logo_ok_KONTRA_saddlebrown.png"), "html", null, true);
         echo "\"></span>
     <div class=\"social d-flex justify-content-around\">
@@ -423,7 +424,6 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
     
 
 </footer>
-
 
 
  </div>   
@@ -460,7 +460,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  405 => 309,  322 => 229,  318 => 228,  307 => 220,  228 => 143,  204 => 120,  153 => 70,  121 => 40,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  406 => 310,  322 => 229,  318 => 228,  307 => 220,  228 => 143,  204 => 120,  153 => 70,  121 => 40,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -558,7 +558,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: O mnie-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
       <!--Section: Oferta-->
       <section id=\"oferta\">
@@ -614,7 +614,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: Oferta-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
       <!--Section: Grafik-->
       <section id=\"grafik\">
@@ -628,7 +628,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
       </section>
       <!--Section: Grafik-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
 
     <!--Section: Cennik-->
     <section id=\"cennik\">
@@ -668,7 +668,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 </section>
     <!--Section: Cennik-->
 
-      <hr style=\"margin: 67.7px 0 40px 0\" />
+      <hr/>
     <!--Section: Rejestracja-->
     <section>
         <div id=\"carousel\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
@@ -679,7 +679,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                         <div class=\"carousel-item active\">
                             <div id=\"rejestracja\" class=\"slajd container d-flex flex-column align-items-center justify-content-center col-9\">
-                                <h4 data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"display-2 mb-5 text-center\"><strong>Rejestracja</strong></h4>
+                                <h4 data-aos=\"fade-up\" data-aos-offset=\"240\" class=\"display-2 mb-5 text-center\"><strong>Rejestracja</strong></h4>
                                 <div data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"row align-items-center\">
 
                                     <div class=\"col-lg-6 d-inline lead\">
@@ -769,9 +769,10 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         </div>
         
     </section>
-  </main>
-
-  <footer data-aos=\"zoom-in\" data-aos-offset=\"200\" id=\"kontakt\"
+     
+    </main>
+    
+    <footer data-aos=\"zoom-in\" data-aos-offset=\"200\" id=\"kontakt\"
         class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100\">
     <span><img data-aos=\"fade-up\" style=\"width: 25rem\" src=\"{{ asset('img/Kasia_logo_ok_KONTRA_saddlebrown.png') }}\"></span>
     <div class=\"social d-flex justify-content-around\">
@@ -793,7 +794,6 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
     
 
 </footer>
-
 
 
  </div>   

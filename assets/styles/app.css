@@ -35,6 +35,10 @@ body {
 
 }
 
+hr {
+    margin: 67.7px 0 40px 0;
+}
+
 #intro {
     background-image: url('file:///C:/Projekty/jogawmarkach/public/img/pomost_hp.jpg');
     background-size: cover;
@@ -126,7 +130,7 @@ body {
 
 #kontakt {
     background-color: #f8cd96;
-    margin-top: 6rem;
+    scroll-margin-top: -40px;
 }
 
 .social-icon {
@@ -191,6 +195,12 @@ body {
     15%{
         transform: rotate(0deg);
     }
+}
+
+.carousel {
+    bottom: 40px;
+    scroll-margin-top: -40px;
+    margin-bottom: 91.7px;
 }
 
 .carousel-indicators {
