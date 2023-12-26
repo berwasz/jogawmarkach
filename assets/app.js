@@ -23,7 +23,7 @@ const $ = require('jquery');
 // the bootstrap module doesn't export/return anything
 require('bootstrap');
 
-
+// animacje podczas scrolowania
 AOS.init({
     duration: 800,
     easing: 'linear',
@@ -31,6 +31,16 @@ AOS.init({
     once: false
 });
 
+// preloader
+document.onreadystatechange = function () {
+    if(document.readyState !== 'complete') {
+        document.querySelector('body').style.visibility = 'hidden';
+        document.querySelector('.loader-container').style.visibility = 'visible';
+    } else {
+        document.querySelector('.loader-container').style.display = 'none';
+        document.querySelector('body').style.visibility = 'visible';
+    }
+};
 
 
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
@@ -272,46 +282,15 @@ function backToTop() {
 
 /* zmiana wyglądu toggle buttona */
 
-/* $(function () {
-    test();
+$(function(){
+	$('#nav-icon3').on('click', function() {
+		$(this).toggleClass('open');
+	});
+    $('.nav-link').on('click', function() {
+        $('#myNavbar7').removeClass('show');
+        $('#nav-icon3').attr('aria-expanded', 'false').removeClass('open');
+    })
 });
 
-$('#test').on('click', test);
 
-function test(){
-    $(this).html(function(i,old){
-        return old=='<i class="bi bi-x-lg"></i>' ?  '<i class="bi bi-list"></i>' : '<i class="bi bi-x-lg"></i>';
-    });
-} */
-
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
-
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('myNavbar7')
-const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
-
-$(function () {
-    tog();
-});
-
-/* $('#nav-icon3').on('click', tog); */
-
-function tog() {
-    $(this).toggleClass('open');
-    
-    navLinks.forEach((l) => {
-        l.addEventListener('click', () => {
-            bsCollapse.toggle();
-            })
-        });
-}
-    
-
-
-
-   
-
-
-
-
-
+/* window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js'); */

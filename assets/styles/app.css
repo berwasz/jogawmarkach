@@ -7,7 +7,9 @@ html {
     font-size: 12px;
     scroll-padding-top: 107.7px;
     overflow-x: hidden;
+
 }
+
 @media screen and (min-width: 300px) {
     html {
         font-size: calc(12px + 6 * ((100vw - 320px) / 680));
@@ -30,6 +32,7 @@ body {
     font-size: 18px;
     background-color: #fef9f3;
     overflow-x: hidden;
+
 }
 
 #intro {
@@ -325,3 +328,37 @@ body {
   }
 
 
+  .loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fef9f3;
+    z-index: 10000;
+}
+
+  .custom-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #f8cd96;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+    z-index: 10001;
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
