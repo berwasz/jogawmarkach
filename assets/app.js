@@ -23,6 +23,8 @@ const $ = require('jquery');
 // the bootstrap module doesn't export/return anything
 require('bootstrap');
 
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+
 // animacje podczas scrolowania
 AOS.init({
     duration: 800,
@@ -44,7 +46,11 @@ document.onreadystatechange = function () {
 
 
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
-const myCarousel = document.getElementById('carousel')
+const myCarousel = document.querySelector('#carousel')
+
+const carousel = new bootstrap.Carousel(myCarousel, {
+    touch: true
+  })
 
 myCarousel.addEventListener('slid.bs.carousel', evt => {
     checkitem();
@@ -293,4 +299,3 @@ $(function(){
 });
 
 
-/* window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js'); */
