@@ -23,14 +23,14 @@ const $ = require('jquery');
 // the bootstrap module doesn't export/return anything
 require('bootstrap');
 
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+import * as bootstrap from 'bootstrap'
 
 // animacje podczas scrolowania
 AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: true
+    once: false
 });
 
 // preloader
@@ -46,11 +46,10 @@ document.onreadystatechange = function () {
 
 
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
-const myCarousel = document.querySelector('#carousel')
-
-const carousel = new bootstrap.Carousel(myCarousel, {
-    touch: true
-  })
+var myCarousel = document.querySelector('#rejestracja')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  touch: true
+})
 
 myCarousel.addEventListener('slid.bs.carousel', evt => {
     checkitem();
@@ -61,7 +60,7 @@ $(function () {
 });
 
 function checkitem() {
-    var $this = $('#carousel');
+    var $this = $('#rejestracja');
     if($('.carousel-inner .carousel-item:first').hasClass('active')) {
         $this.children('.carousel-control-prev').hide();
         $this.children('.carousel-control-next').show();
@@ -288,14 +287,15 @@ function backToTop() {
 
 /* zmiana wyglądu toggle buttona */
 
-$(function(){
+
 	$('#nav-icon3').on('click', function() {
 		$(this).toggleClass('open');
-	});
-    $('.nav-link').on('click', function() {
-        $('#myNavbar7').removeClass('show');
-        $('#nav-icon3').attr('aria-expanded', 'false').removeClass('open');
+    });
+
+    $('.nav-link').on('click', () => {
+        $('#navbarNav').removeClass('show');
+        $('#nav-icon3').removeClass('open');
     })
-});
+
 
 

@@ -47,7 +47,7 @@ hr {
     height: 100vh;
 }
 
-.bi {
+.bi, .adres {
     color: saddlebrown;
 }
 
@@ -119,9 +119,9 @@ hr {
     font-size: .9rem;
 }
 
-#omnie {
+/* #omnie {
     min-height: 60vh;
-}
+} */
 
 .table-color {
     background-color: transparent !important;
@@ -371,4 +371,41 @@ hr {
   
   @keyframes s7 {
     100% {transform: rotate(1turn)}
+  }
+
+  .navbar-toggle {
+    border: none;
+    background: transparent !important;
+    
+    &:hover {
+      background: transparent !important;
+    }
+  
+    .icon-bar {
+      width: 22px;
+      transition: all 0.2s;
+    }
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    .middle-bar {
+      opacity: 0;
+    }
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+  
+    &.collapsed {
+      .top-bar {
+        transform: rotate(0);      
+      }
+      .middle-bar {
+        opacity: 1;
+      }
+      .bottom-bar {
+        transform: rotate(0);
+      }
+    }
   }
