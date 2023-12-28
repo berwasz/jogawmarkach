@@ -9,7 +9,6 @@
 import './styles/app.css';
 
 import * as FullCalendar from "@fullcalendar/core";
-import plLocale from '@fullcalendar/core/locales/pl';
 import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
@@ -30,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: false
+    once: true
 });
 
 // preloader
@@ -77,7 +76,6 @@ function checkitem() {
 // koniec //
 
 //grafik//
-
 
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
@@ -260,6 +258,7 @@ $(window).trigger('resize'); */
 
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
+let logoHome = document.querySelector(".navbar-brand");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -278,6 +277,10 @@ function scrollFunction() {
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
+logoHome.addEventListener("click", evt => {
+    backToTop();
+    history.pushState("", document.title, window.location.pathname);
+});
 
 function backToTop() {
   document.body.scrollTop = 0;
@@ -297,5 +300,19 @@ function backToTop() {
         $('#nav-icon3').removeClass('open');
     })
 
+//usuwanie hashtagów z url
+    /* $(window).on('hashchange', function(e){
+        history.pushState("", document.title, window.location.pathname);
+    }); */
+
+
+//wyświetla numer telefonu
+/*     let telefon = document.getElementById('telefon')
+
+    telefon.addEventListener('click', showTelNumber)
+
+    function showTelNumber() {
+        alert("603 250 073")
+      } */
 
 

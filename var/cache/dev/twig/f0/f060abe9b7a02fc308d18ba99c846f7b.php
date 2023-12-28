@@ -99,10 +99,10 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         <nav class=\"navbar fixed-top navbar-expand-lg bg-light p-0 shadow\" style=\"min-height: 67.7px\">
             <div class=\"container-fluid d-flex flex-row\">
              
-                    <a class=\"navbar-brand d-flex align-items-center\" href=\"#\">
+                    <div class=\"navbar-brand d-flex align-items-center\">
                     <img src=\"img/Kasia_logo_www.png\" alt=\"Logo\" width=\"60\" height=\"60\" class=\"d-inline-block align-text-top me-1\">
                     Kasia Latek | Pilates i joga
-                    </a>
+                    </div>
                     
                     <div class=\"d-flex justify-content-end\">
                         <div id=\"nav-icon3\" class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -427,18 +427,40 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         
         <div class=\"social d-flex justify-content-around\">
             
-            <span data-aos=\"zoom-out\" data-aos-delay=\"100\" class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
-                            class=\"bi bi-facebook\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"100\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
+                                      title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
             <span data-aos=\"zoom-out\" data-aos-delay=\"300\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
-                            class=\"bi bi-instagram\"></i></a></span>
-            <span data-aos=\"zoom-out\" data-aos-delay=\"500\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
-                            class=\"bi bi-messenger\"></i></a></span>
-            <span data-aos=\"zoom-out\" data-aos-delay=\"700\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
-                                    title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
+                                      href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
+                                      class=\"bi bi-messenger\"></i></a></span>
+            <span id=\"telefon\" data-bs-toggle=\"modal\" data-bs-target=\"#numerTelefonu\" data-aos=\"zoom-out\" data-aos-delay=\"500\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      title=\"telefon\"><i class=\"bi bi-telephone-fill\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"700\" class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
+                                      class=\"bi bi-facebook\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"900\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
+                                      class=\"bi bi-instagram\"></i></a></span>
+
+            <div class=\"modal fade\" id=\"numerTelefonu\" data-bs-backdrop=\"static\" data-bs-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"staticBackdropLabel\" aria-hidden=\"true\">
+                <div class=\"modal-dialog modal-dialog-centered\">
+                    <div class=\"modal-content shadow border-0\">
+                        <div class=\"modal-header border-0\">
+                            <h1 class=\"modal-title fs-5\" id=\"staticBackdropLabel\">603 250 073</h1>
+                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                        </div>
+                        <div class=\"modal-header\">
+                            <h1 class=\"modal-title fs-5\" id=\"staticBackdropLabel\">Telefon odbierze Bernard</h1>
+                        </div>
+                        ";
+        // line 362
+        echo "                        ";
+        // line 365
+        echo "                    </div>
+                </div>
+            </div>
+
+
         </div>
     
 
@@ -479,7 +501,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  423 => 329,  338 => 247,  334 => 246,  323 => 238,  246 => 163,  222 => 140,  120 => 39,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  459 => 365,  457 => 362,  423 => 329,  338 => 247,  334 => 246,  323 => 238,  246 => 163,  222 => 140,  120 => 39,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -503,10 +525,10 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         <nav class=\"navbar fixed-top navbar-expand-lg bg-light p-0 shadow\" style=\"min-height: 67.7px\">
             <div class=\"container-fluid d-flex flex-row\">
              
-                    <a class=\"navbar-brand d-flex align-items-center\" href=\"#\">
+                    <div class=\"navbar-brand d-flex align-items-center\">
                     <img src=\"img/Kasia_logo_www.png\" alt=\"Logo\" width=\"60\" height=\"60\" class=\"d-inline-block align-text-top me-1\">
                     Kasia Latek | Pilates i joga
-                    </a>
+                    </div>
                     
                     <div class=\"d-flex justify-content-end\">
                         <div id=\"nav-icon3\" class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -818,18 +840,41 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         
         <div class=\"social d-flex justify-content-around\">
             
-            <span data-aos=\"zoom-out\" data-aos-delay=\"100\" class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
-                            class=\"bi bi-facebook\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"100\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
+                                      title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
             <span data-aos=\"zoom-out\" data-aos-delay=\"300\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
-                            class=\"bi bi-instagram\"></i></a></span>
-            <span data-aos=\"zoom-out\" data-aos-delay=\"500\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
-                            class=\"bi bi-messenger\"></i></a></span>
-            <span data-aos=\"zoom-out\" data-aos-delay=\"700\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
-                                    href=\"mailto:kasia@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl\"
-                                    title=\"email\"><i class=\"bi bi-envelope\"></i></a></span>
+                                      href=\"https://www.m.me/101829889521117\" title=\"messenger\"><i
+                                      class=\"bi bi-messenger\"></i></a></span>
+            <span id=\"telefon\" data-bs-toggle=\"modal\" data-bs-target=\"#numerTelefonu\" data-aos=\"zoom-out\" data-aos-delay=\"500\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      title=\"telefon\"><i class=\"bi bi-telephone-fill\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"700\" class=\"m-1 text-center\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"https://www.facebook.com/KasiaLatekJoga\" title=\"facebook\"><i
+                                      class=\"bi bi-facebook\"></i></a></span>
+            <span data-aos=\"zoom-out\" data-aos-delay=\"900\" class=\"m-1\"><a class=\"social-icon p-2 text-body-secondary\"
+                                      href=\"https://www.instagram.com/kasia_latek\" title=\"instagram\"><i
+                                      class=\"bi bi-instagram\"></i></a></span>
+
+            <div class=\"modal fade\" id=\"numerTelefonu\" data-bs-backdrop=\"static\" data-bs-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"staticBackdropLabel\" aria-hidden=\"true\">
+                <div class=\"modal-dialog modal-dialog-centered\">
+                    <div class=\"modal-content shadow border-0\">
+                        <div class=\"modal-header border-0\">
+                            <h1 class=\"modal-title fs-5\" id=\"staticBackdropLabel\">603 250 073</h1>
+                            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                        </div>
+                        <div class=\"modal-header\">
+                            <h1 class=\"modal-title fs-5\" id=\"staticBackdropLabel\">Telefon odbierze Bernard</h1>
+                        </div>
+                        {# <div class=\"modal-body\">
+                        </div> #}
+                        {# <div class=\"modal-footer\">
+                            <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Zamknij</button>
+                        </div> #}
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     
 
