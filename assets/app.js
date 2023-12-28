@@ -48,7 +48,7 @@ document.onreadystatechange = function () {
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
 var myCarousel = document.querySelector('#rejestracja')
 var carousel = new bootstrap.Carousel(myCarousel, {
-  touch: true
+  
 })
 
 myCarousel.addEventListener('slid.bs.carousel', evt => {

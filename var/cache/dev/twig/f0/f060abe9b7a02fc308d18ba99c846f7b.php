@@ -309,8 +309,6 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
     <section>
         <div id=\"rejestracja\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
 
-                    
-
                     <div class=\"carousel-inner h-100\">
 
                         <div class=\"carousel-item active\">
@@ -321,7 +319,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                                     <div class=\"col-lg-6 d-inline lead\">
                                         <div class=\"text-center p-4\"><img class=\"efitness-logo rounded-3\"
                                                                     src=\"";
-        // line 240
+        // line 238
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/efitnessapp_logo.webp"), "html", null, true);
         echo "\"></div>
                                         <p>Do rejestracji w klubie oraz rezerwacji miejsc na poszczególne zajęcia polecamy w
@@ -332,11 +330,11 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                                         <div class=\"d-flex flex-column\">
                                             <a href=\"https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl\"><img class=\"m-2 google-play\" src=\"";
-        // line 248
+        // line 246
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/google_play.webp"), "html", null, true);
         echo "\"></a>
                                             <a href=\"https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8\"><img class=\"m-2 app-store\" src=\"";
-        // line 249
+        // line 247
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/appstore.webp"), "html", null, true);
         echo "\"></a>
                                         </div>
@@ -377,7 +375,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                                 <h4 data-aos=\"fade-up\" data-aos-offset=\"240\" class=\"display-2 mb-5 text-center\"><strong>Instalacja apki</strong></h4>
 
-                                <div data-aos=\"fade-up\" class=\"row align-items-start\">
+                                <div data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"row align-items-start\">
                                     <div class=\"col-lg pb-3\">
                                         <div class=\"text-center\"><i class=\"bi bi-fingerprint h1\"></i></div>
                                         <div class=\"p-2 lead\">Przy pierwszym uruchomieniu aplikacji trzeba potwierdzić tożsamość korzystając z konta Google lub Apple ID.</div>
@@ -394,21 +392,21 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </div>
                         </div>
                     </div>
-                    <button class=\"carousel-control-prev justify-content-start\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"prev\">
+                    <button class=\"carousel-control-prev justify-content-start\" type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide=\"prev\">
                         <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
                         <span class=\"visually-hidden\">Previous</span>
                     </button>
 
-                    <button class=\"carousel-control-next justify-content-end\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"next\">
+                    <button class=\"carousel-control-next justify-content-end\" type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide=\"next\">
                         <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
                         <span class=\"visually-hidden\">Next</span>
                     </button>
                 
                     <div class=\"carousel-indicators\">
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"0\" class=\"indi-btn indicator active\"
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"0\" class=\"indi-btn indicator active\"
                                 aria-current=\"true\" aria-label=\"Slide 1\"></button>
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\" class=\"indi-btn\"></button>
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\" class=\"indi-btn\"></button>
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\" class=\"indi-btn\"></button>
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\" class=\"indi-btn\"></button>
                     </div>
 
         </div>
@@ -421,7 +419,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
         class=\"container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100\">
         
         <span><img data-aos=\"fade-up\" style=\"width: 25rem\" src=\"";
-        // line 331
+        // line 329
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Kasia_logo_ok_KONTRA_saddlebrown.png"), "html", null, true);
         echo "\"></span>
         
@@ -481,7 +479,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  425 => 331,  340 => 249,  336 => 248,  325 => 240,  246 => 163,  222 => 140,  120 => 39,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  423 => 329,  338 => 247,  334 => 246,  323 => 238,  246 => 163,  222 => 140,  120 => 39,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -714,8 +712,6 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
     <section>
         <div id=\"rejestracja\" class=\"container-fluid carousel slide\" data-bs-touch=\"true\" data-bs-wrap=\"false\">
 
-                    
-
                     <div class=\"carousel-inner h-100\">
 
                         <div class=\"carousel-item active\">
@@ -773,7 +769,7 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
 
                                 <h4 data-aos=\"fade-up\" data-aos-offset=\"240\" class=\"display-2 mb-5 text-center\"><strong>Instalacja apki</strong></h4>
 
-                                <div data-aos=\"fade-up\" class=\"row align-items-start\">
+                                <div data-aos=\"fade-up\" data-aos-offset=\"200\" class=\"row align-items-start\">
                                     <div class=\"col-lg pb-3\">
                                         <div class=\"text-center\"><i class=\"bi bi-fingerprint h1\"></i></div>
                                         <div class=\"p-2 lead\">Przy pierwszym uruchomieniu aplikacji trzeba potwierdzić tożsamość korzystając z konta Google lub Apple ID.</div>
@@ -790,21 +786,21 @@ class __TwigTemplate_f78dbc5c461f0984c2ae8f1d58e54b9d extends Template
                             </div>
                         </div>
                     </div>
-                    <button class=\"carousel-control-prev justify-content-start\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"prev\">
+                    <button class=\"carousel-control-prev justify-content-start\" type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide=\"prev\">
                         <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
                         <span class=\"visually-hidden\">Previous</span>
                     </button>
 
-                    <button class=\"carousel-control-next justify-content-end\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"next\">
+                    <button class=\"carousel-control-next justify-content-end\" type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide=\"next\">
                         <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
                         <span class=\"visually-hidden\">Next</span>
                     </button>
                 
                     <div class=\"carousel-indicators\">
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"0\" class=\"indi-btn indicator active\"
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"0\" class=\"indi-btn indicator active\"
                                 aria-current=\"true\" aria-label=\"Slide 1\"></button>
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\" class=\"indi-btn\"></button>
-                        <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\" class=\"indi-btn\"></button>
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\" class=\"indi-btn\"></button>
+                        <button type=\"button\" data-bs-target=\"#rejestracja\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\" class=\"indi-btn\"></button>
                     </div>
 
         </div>
