@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         initialView: 'dayGridMonth',
         initialDate: new Date(),
-        eventColor: '#8b4513',
+        eventColor: '#ff8c00',
         locale: 'plLocale',
         firstDay: 1,
 

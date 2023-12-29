@@ -48,7 +48,7 @@ hr {
 }
 
 .bi, .adres {
-    color: saddlebrown;
+    color: darkorange;
 }
 
 @media (max-width: 400px) {
@@ -115,7 +115,7 @@ hr {
     align-items: normal !important;
 }
 
-.fc-event-title {
+.fc-event-title, .fc-event-time {
     font-size: .9rem;
 }
 
@@ -217,11 +217,11 @@ hr {
 }
 
 .carousel-indicators button {
-    background-color:saddlebrown !important;
+    background-color:darkorange !important;
 }
 
 .carousel-indicators .active {
-    background-color:saddlebrown !important;
+    background-color:darkorange !important;
 }
 
 .google-play {
@@ -245,7 +245,7 @@ hr {
     display: none;
     border: none;
     border-radius: 50%;
-    background: rgba(139, 69, 19, .6);
+    background: rgba(255, 140, 0, .6);
     width: 4rem;
     height: 4rem;
   }
@@ -373,7 +373,7 @@ hr {
     100% {transform: rotate(1turn)}
   }
 
-  #telefon, .navbar-brand {
+  #ikonaKwalifikacje, #telefon, .navbar-brand {
     cursor: pointer;
   }
 
