@@ -13,8 +13,12 @@ return [[
         'app' => [
             'js' => [
                 'http://localhost:8080/build/runtime.js',
-                'http://localhost:8080/build/vendors-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_modules_jquery_dist_jquery_js-no-45b7f0.js',
+                'http://localhost:8080/build/vendors-node_modules_aos_dist_aos_js-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_mod-2b1987.js',
                 'http://localhost:8080/build/app.js',
+            ],
+            'css' => [
+                'http://localhost:8080/build/vendors-node_modules_aos_dist_aos_js-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_mod-2b1987.css',
+                'http://localhost:8080/build/app.css',
             ],
         ],
     ],

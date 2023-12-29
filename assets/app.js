@@ -314,5 +314,3 @@ function backToTop() {
     function showTelNumber() {
         alert("603 250 073")
       } */
-
-
