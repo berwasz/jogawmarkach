@@ -29,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: true
+    once: false
 });
 
 // preloader
@@ -60,7 +60,7 @@ $(function () {
 
 function checkitem() {
     var $this = $('#rejestracja');
-    if($('.carousel-inner .carousel-item:first').hasClass('active')) {
+    if($('#rejestracja .carousel-inner .carousel-item:first').hasClass('active')) {
         $this.children('.carousel-control-prev').hide();
         $this.children('.carousel-control-next').show();
     } else if($('.carousel-inner .carousel-item:last').hasClass('active')) {
