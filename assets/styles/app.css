@@ -49,6 +49,7 @@ hr {
 
 .bi, .adres {
     color: darkorange;
+    
 }
 
 @media (max-width: 400px) {
