@@ -59,7 +59,7 @@
             </div>
         </nav>
         
-        <div id="intro" class="bg-image shadow"></div>
+        <div id="intro" class="bg-image shadow" title="Kobieta ćwicząca jogę o zachodzie słońca"></div>
     </header>
 
     <main style="margin-top: 67.7px;">
@@ -70,7 +70,7 @@
             <div id="omnie" class="row">
                 <div data-aos="flip-up" class="col-md-6 gx-5 mb-4">
                     <div class="bg-image">
-                    <img src="img/omnie.webp" class="img-fluid shadow rounded-3" />
+                    <img src="{{ asset ('img/omnie.webp')}}" alt="Usmiechnięta kobieta o blond włosach" title="Katarzyna Latek, instruktorka pilatesu i jogi" class="img-fluid shadow rounded-3" />
                     </div>
                 </div>
 
@@ -138,10 +138,10 @@
                 <div id="pastelowaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner shadow rounded-3 mt-4">
                         <div class="carousel-item active">
-                            <img src="img/sala.webp" class="w-100" alt="...">
+                            <img src="{{ asset ('img/sala.webp')}}" class="w-100" alt="Puste pomieszczenie z dużymi oknami" title="Sala, w której odbywają sie zajęcia pilates i joga">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/pastelowy_gaj.webp" class="w-100" alt="...">
+                            <img src="{{ asset ('img/pastelowy_gaj.webp')}}" class="w-100" alt="Dwupiętrowy budynek przedszkola" title="Przedszkole Pastelowy Gaj">
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
             <div class="card shadow border-0 h-100" style="border-radius: 10px;">
               <div class="bg-image">
                 {# <img src="img/pexels-lucas-pezeta-9351349_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
-                <img src="img/joga2.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/>
+                <img src="{{ asset ('img/joga2.webp')}}" class="img-fluid" style="border-radius: 10px 10px 0 0;" alt="Kobieta ćwicząca jogę" title="Joga - pozycja pługa, halasana"/>
               </div>
               <div class="card-body text-start">
                 <h2 data-aos="fade-up">Joga</h2>
@@ -192,7 +192,7 @@
             <div class="card shadow border-0 h-100" style="border-radius: 10px;">
               <div class="bg-image">
                 {# <img src="img/pexels-andrea-piacquadio-868483_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
-                <img src="img/pilates.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/>
+                <img src="{{ asset ('img/pilates.webp')}}" class="img-fluid" style="border-radius: 10px 10px 0 0;" alt="Kobieta ćwicząca pilates" title="Pilates - pozycja wzmacniająca mięśnie core"/>
               </div>
               <div class="card-body text-start">
                 <h2 data-aos="fade-up">Pilates</h2>
@@ -291,8 +291,8 @@
                                     <div class="col d-flex align-items-center justify-content-center flex-wrap">
 
                                         <div class="d-flex flex-column">
-                                            <a href="https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl"><img class="m-2 google-play" src="{{ asset('img/google_play.webp') }}"></a>
-                                            <a href="https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8"><img class="m-2 app-store" src="{{ asset('img/appstore.webp') }}"></a>
+                                            <a href="https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl"><img class="m-2 google-play" src="{{ asset('img/google_play.webp') }}" alt="Logo Google Play"></a>
+                                            <a href="https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8"><img class="m-2 app-store" src="{{ asset('img/appstore.webp') }}" alt="Logo App Store"></a>
                                         </div>
 
                                     </div>

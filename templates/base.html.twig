@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <link rel="icon" href="{{ asset ('img/favicon.ico')}}">
+        <title>{% block title %}Joga w Markach{% endblock %}</title>
+        <link rel="icon" href="{{ asset ('img/favicon.ico')}}">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Joga i pilates Marki - praktyka jogi (vinyasa, hatha) i ćwiczenia pilates dla dorosłych. Dla początkujących i średnio zaawansowanych." />
@@ -36,8 +37,7 @@
         gtag('config', 'G-Y9PT06EJ46');
         </script>
 
-        <title>{% block title %}Joga w Markach{% endblock %}</title>
-        <link rel="icon" href="{{ asset('img/favicon.ico') }}">
+
         {#<link rel="stylesheet" href="{{ asset('app.css') }}">#}
 
         {% block stylesheets %}
