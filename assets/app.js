@@ -176,84 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 $(window).trigger('resize');
 
-//zdjęcie do jogi
-$(window).resize(function () {
-    var width = $(window).width();
-    if (width < 768) {
-        $("#oferta").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
-            "                    <div class=\"row g-0\">\n" +
-            "                        <div class=\"col-md-6\">\n" +
-
-            "                                <img class=\"img-fluid\" src=\"img/pexels-lucas-pezeta-9351349_800x800.webp\">\n" +
-
-            "                        </div>\n" +
-            "                        <div class=\"col-md-6\">\n" +
-            "                            <div class=\"card-body\">\n" +
-            "                                <h5 class=\"display-4\">JOGA</h5>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>\n" +
-            "                            </div>\n" +
-            "                        </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    } else {
-        $("#oferta").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-
-            "                        <img class=\"img-fluid\" src=\"img/pexels-lucas-pezeta-9351349_1600x1000.webp\">\n" +
-
-            "                    <div style='margin-left: 50%' class=\"col-md-6 card-img-overlay d-flex flex-column p-0\">\n" +
-            "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 0 0 10px\" class=\"p-3\">\n" +
-            "                        <h5 class=\"display-4\">JOGA</h5>\n" +
-            "                        <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>\n" +
-            "                        <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>\n" +
-            "                        <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>\n" +
-            "                    </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    }
-});
-$(window).trigger('resize');
-
-//zdjęcie do pilatesu
-$(window).resize(function () {
-    var width = $(window).width();
-    if (width < 768) {
-        $("#oferta-pilates").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
-            "                    <div class=\"row g-0\">\n" +
-            "                        <div class=\"col-md-6\">\n" +
-
-            "                                <img class=\"img-fluid\" src=\"img/pexels-andrea-piacquadio-868483_800x800.webp\">\n" +
-
-            "                        </div>\n" +
-            "                        <div class=\"col-md-6\">\n" +
-            "                            <div class=\"card-body\">\n" +
-            "                                <h5 class=\"display-4\">PILATES</h5>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>\n" +
-            "                            </div>\n" +
-            "                        </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    } else {
-        $("#oferta-pilates").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-
-            "                        <img class=\"img-fluid\" src=\"img/pexels-andrea-piacquadio-868483_1600x1000.webp\">\n" +
-
-            "                    <div class=\"col-md-6 card-img-overlay d-flex flex-column justify-content-end p-0\">\n" +
-                "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 10px 0 0\" class=\"p-3\">\n" +
-                "                        <h5 class=\"display-4\">PILATES</h5>\n" +
-                "                        <p class=\"lead\" style=\"text-indent: 2rem\">Pilates wielu osobom kojarzy się głównie z maszynami. Tak, istnieje pilates na maszynach (reformer, cadillac, beczka, krzesło), ale to także – a właściwie przede wszystkim – system ćwiczeń na macie, czasem z drobnymi przyrządami.</p>\n" +
-                "                        <p class=\"lead\" style=\"text-indent: 2rem\">Większość ćwiczeń opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała – brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.</p>\n" +
-                "                        <p class=\"lead\" style=\"text-indent: 2rem\">Nie ma znaczenia czy masz doświadczenie z pilatesem, czy dopiero chcesz spróbować. Zapraszam wszystkich!</p>\n" +
-                "                    </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    }
-});
-$(window).trigger('resize'); */
-
 /* button go to top */
 
 //Get the button
@@ -300,17 +222,6 @@ function backToTop() {
         $('#nav-icon3').removeClass('open');
     })
 
-//usuwanie hashtagów z url
-    /* $(window).on('hashchange', function(e){
-        history.pushState("", document.title, window.location.pathname);
-    }); */
-
-
-//wyświetla numer telefonu
-/*     let telefon = document.getElementById('telefon')
-
-    telefon.addEventListener('click', showTelNumber)
-
-    function showTelNumber() {
-        alert("603 250 073")
-      } */
+// Skrypt wygenerowano za darmo z uzyciem: https://skrypt-cookies.pl 
+// Ekipa autorow skryptu i kontakt z nami: https://skrypt-cookies.pl/o-autorach 
+function hovered(){document.getElementById("hcks").style.background="#f8cd96";}function unhovered(){document.getElementById("hcks").style.background="#ff8c00";}function hidecks(){document.getElementById("cookie").style.display="none";setCookie("ck_0bb33dd495b367be","y",30);}function setCookie(name,value,days){var expires="";if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires=";expires="+date.toUTCString();}document.cookie=name+"="+(value||"")+expires+";path=/";}function getCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length);}return null;}if(window.addEventListener){window.addEventListener('load',skr_ckz)}else{window.attachEvent('onload',skr_ckz)}function skr_ckz(){let x=getCookie("ck_0bb33dd495b367be");if(!x){let c=document.createElement("aside");let hc=document.createElement("span");c.setAttribute("id","cookie");c.style.zIndex=999999;hc.setAttribute("id","hcks");document.body.appendChild(c);c.style.background="#636a71";c.style.color="#fafafa";hc.style.background="#ff8c00";hc.style.color="#fef9f3";c.innerHTML="<span id=\"cinfo\" style=\"flex: 1 1 auto; margin-top: 2px;\">Serwis wykorzystuje do prawidłowego działania pliki cookies [&nbsp;<a href=\"https://policies.google.com/technologies/cookies\" target=\"_blank\" style=\"text-decoration:underline;color:#fafafa;\">Więcej informacji</a>&nbsp;]</span>";hc.innerHTML="Rozumiem";c.style.left="0px";c.style.right="0px";c.style.bottom="0px";c.style.top="auto";c.style.maxWidth="100%";hc.style.padding="12px 30px";hc.style.cursor="pointer";hc.style.display="flex";hc.style.borderRadius=".3rem";hc.style.alignItems="center";hc.style.marginLeft="15px";hc.addEventListener("click",hidecks,false);hc.addEventListener("mouseenter",hovered,false);hc.addEventListener("mouseleave",unhovered,false);c.style.position="fixed";c.style.padding="20px";c.style.fontSize="17px";c.style.display="flex";c.appendChild(hc);}}
