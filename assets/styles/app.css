@@ -47,6 +47,12 @@ hr {
     height: 100vh;
 }
 
+@media (max-width: 575px){
+    #intro {
+        background-image: url('file:///C:/Projekty/jogawmarkach/public/img/pomost_hp_600x1000.webp');
+    }
+}
+
 .bi, .adres {
     color: darkorange;
     

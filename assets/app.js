@@ -102,10 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         eventSources: [
             {
                 googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
-            },
-            {
-
-            },
+            }
         ],
         eventClick: function(info) {
             info.jsEvent.preventDefault(); // don't let the browser navigate
@@ -139,42 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
 });
-
-//zdjęcie o mmnie
-
-/* $(window).resize(function () {
-    var width = $(window).width();
-    if (width < 768) {
-        $("#omnie").html("<div class=\"card rounded-0 bg-transparent border-0\">\n" +
-            "                    <div class=\"row g-0\">\n" +
-            "                        <div class=\"col-md-6\">\n" +
-
-            "                                <img class=\"img-fluid\" src=\"img/kasia_omnie_800x800.webp\">\n" +
-
-            "                        </div>\n" +
-            "                        <div class=\"col-md-6\">\n" +
-            "                            <div class=\"card-body\">\n" +
-            "                                <h5 class=\"display-4\">O MNIE</h5>\n" +
-            "                                <p class=\"lead\" style=\"text-indent: 2rem\">Instruktor fitness. Katarzyna Latek. Instruktorka pilates, entuzjastka jogi i strechingu, pasjonatka wielu form ćwiczeń z zakresu body&mind.</p>\n" +
-            "                            </div>\n" +
-            "                        </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    } else {
-        $("#omnie").html("<div id=\"gradient\" class=\"card text-bg-dark border-0 rounded-0\">\n" +
-
-            "                        <img class=\"img-fluid\" src=\"img/kasia_omnie_1600x1000.webp\">\n" +
-
-            "                    <div class=\"col-md-5 card-img-overlay d-flex flex-column p-0\">\n" +
-            "                    <div style=\"background-color: rgba(0,0,0,.3); border-radius: 0 0 10px 0\" class=\"p-3\">\n" +
-            "                        <h5 class=\"display-4\">O MNIE</h5>\n" +
-            "                        <p class=\"lead\" style=\"text-indent: 2rem\">Instruktor fitness. Katarzyna Latek. Instruktorka pilates, entuzjastka jogi i strechingu, pasjonatka wielu form ćwiczeń z zakresu body&mind.</p>\n" +
-            "                    </div>\n" +
-            "                    </div>\n" +
-            "                </div>");
-    }
-});
-$(window).trigger('resize');
 
 /* button go to top */
 
@@ -224,4 +185,4 @@ function backToTop() {
 
 // Skrypt wygenerowano za darmo z uzyciem: https://skrypt-cookies.pl 
 // Ekipa autorow skryptu i kontakt z nami: https://skrypt-cookies.pl/o-autorach 
-function hovered(){document.getElementById("hcks").style.background="#f8cd96";}function unhovered(){document.getElementById("hcks").style.background="#ff8c00";}function hidecks(){document.getElementById("cookie").style.display="none";setCookie("ck_0bb33dd495b367be","y",30);}function setCookie(name,value,days){var expires="";if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires=";expires="+date.toUTCString();}document.cookie=name+"="+(value||"")+expires+";path=/";}function getCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length);}return null;}if(window.addEventListener){window.addEventListener('load',skr_ckz)}else{window.attachEvent('onload',skr_ckz)}function skr_ckz(){let x=getCookie("ck_0bb33dd495b367be");if(!x){let c=document.createElement("aside");let hc=document.createElement("span");c.setAttribute("id","cookie");c.style.zIndex=999999;hc.setAttribute("id","hcks");document.body.appendChild(c);c.style.background="#636a71";c.style.color="#fafafa";hc.style.background="#ff8c00";hc.style.color="#fef9f3";c.innerHTML="<span id=\"cinfo\" style=\"flex: 1 1 auto; margin-top: 2px;\">Serwis wykorzystuje do prawidłowego działania pliki cookies [&nbsp;<a href=\"https://policies.google.com/technologies/cookies\" target=\"_blank\" style=\"text-decoration:underline;color:#fafafa;\">Więcej informacji</a>&nbsp;]</span>";hc.innerHTML="Rozumiem";c.style.left="0px";c.style.right="0px";c.style.bottom="0px";c.style.top="auto";c.style.maxWidth="100%";hc.style.padding="12px 30px";hc.style.cursor="pointer";hc.style.display="flex";hc.style.borderRadius=".3rem";hc.style.alignItems="center";hc.style.marginLeft="15px";hc.addEventListener("click",hidecks,false);hc.addEventListener("mouseenter",hovered,false);hc.addEventListener("mouseleave",unhovered,false);c.style.position="fixed";c.style.padding="20px";c.style.fontSize="17px";c.style.display="flex";c.appendChild(hc);}}
+function hovered(){document.getElementById("hcks").style.background="#f8cd96";}function unhovered(){document.getElementById("hcks").style.background="#ff8c00";}function hidecks(){document.getElementById("cookie").style.display="none";setCookie("ck_0bb33dd495b367be","y",30);}function setCookie(name,value,days){var expires="";if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires=";expires="+date.toUTCString();}document.cookie=name+"="+(value||"")+expires+";path=/";}function getCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length);}return null;}if(window.addEventListener){window.addEventListener('load',skr_ckz)}else{window.attachEvent('onload',skr_ckz)}function skr_ckz(){let x=getCookie("ck_0bb33dd495b367be");if(!x){let c=document.createElement("aside");let hc=document.createElement("span");c.setAttribute("id","cookie");c.style.zIndex=999999;hc.setAttribute("id","hcks");document.body.appendChild(c);c.style.background="#636a71";c.style.color="#fafafa";hc.style.background="#ff8c00";hc.style.color="#fef9f3";c.innerHTML="<span id=\"cinfo\" style=\"flex: 1 1 auto; margin-top: 2px;\">Na tej stronie używamy plików cookie Google, by móc świadczyć Ci usługi i analizować ruch. [&nbsp;<a href=\"https://policies.google.com/technologies/cookies\" target=\"_blank\" style=\"text-decoration:underline;color:#fafafa;\">Więcej informacji</a>&nbsp;]</span>";hc.innerHTML="Rozumiem";c.style.left="0px";c.style.right="0px";c.style.bottom="0px";c.style.top="auto";c.style.maxWidth="100%";hc.style.padding="12px 30px";hc.style.cursor="pointer";hc.style.display="flex";hc.style.borderRadius=".3rem";hc.style.alignItems="center";hc.style.marginLeft="15px";hc.addEventListener("click",hidecks,false);hc.addEventListener("mouseenter",hovered,false);hc.addEventListener("mouseleave",unhovered,false);c.style.position="fixed";c.style.padding="20px";c.style.fontSize="17px";c.style.display="flex";c.appendChild(hc);}}
