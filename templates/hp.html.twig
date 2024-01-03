@@ -23,7 +23,7 @@
                     </div>
                     
                     <div class="d-flex justify-content-end">
-                        <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                        <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -138,10 +138,10 @@
                 <div id="pastelowaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner shadow rounded-3 mt-4">
                         <div class="carousel-item active">
-                            <img src="{{ asset ('img/sala.webp')}}" width="600" height="375" class="w-100" alt="Puste pomieszczenie z dużymi oknami" title="Sala, w której odbywają sie zajęcia pilates i joga"/>
+                            <img src="{{ asset ('img/sala.webp')}}" class="w-100" alt="Puste pomieszczenie z dużymi oknami" title="Sala, w której odbywają sie zajęcia pilates i joga"/>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset ('img/pastelowy_gaj.webp')}}" width="600" height="375" class="w-100" alt="Dwupiętrowy budynek przedszkola" title="Przedszkole Pastelowy Gaj"/>
+                            <img src="{{ asset ('img/pastelowy_gaj.webp')}}" class="w-100" alt="Dwupiętrowy budynek przedszkola" title="Przedszkole Pastelowy Gaj"/>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
             <div class="card shadow border-0 h-100" style="border-radius: 10px;">
               <div class="bg-image">
                 {# <img src="img/pexels-lucas-pezeta-9351349_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
-                <img style="border-radius: 10px 10px 0 0; aspect-ratio: 1.6/1" src="{{ asset ('img/joga2.webp')}}" class="img-fluid" alt="Kobieta ćwicząca jogę" title="Joga - pozycja pługa, halasana"/>
+                <img style="border-radius: 10px 10px 0 0;" src="{{ asset ('img/joga2.webp')}}" width="800" height="500" class="img-fluid" alt="Kobieta ćwicząca jogę" title="Joga - pozycja pługa, halasana"/>
                 
               </div>
               <div class="card-body text-start">
@@ -193,7 +193,7 @@
             <div class="card shadow border-0 h-100" style="border-radius: 10px;">
               <div class="bg-image">
                 {# <img src="img/pexels-andrea-piacquadio-868483_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
-                <img style="border-radius: 10px 10px 0 0; aspect-ratio: 1.6/1" src="{{ asset ('img/pilates.webp')}}" class="img-fluid" alt="Kobieta ćwicząca pilates" title="Pilates - pozycja wzmacniająca mięśnie core"/>
+                <img style="border-radius: 10px 10px 0 0;" src="{{ asset ('img/pilates.webp')}}" width="800" height="500" class="img-fluid" alt="Kobieta ćwicząca pilates" title="Pilates - pozycja wzmacniająca mięśnie core"/>
                 
               </div>
               <div class="card-body text-start">
@@ -373,11 +373,11 @@
      
     </main>
 
-    <div class="modal fade" id="numerTelefonu" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="numerTelefonu" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabelTel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content shadow border-0">
                 <div class="modal-header border-0">
-                    <p class="modal-title fs-5" id="staticBackdropLabel">603 250 073</p>
+                    <p class="modal-title fs-5" id="staticBackdropLabelTel">603 250 073</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-header">
