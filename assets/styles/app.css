@@ -138,7 +138,9 @@ hr {
 }
 
 .slajd {
-    height: 80vh;
+    margin-top: 40px;
+    min-height: 80vh;
+   
 }
 
 .nav-link {
@@ -146,10 +148,6 @@ hr {
 }
 
 @media (max-width: 991px) {
-    .slajd {
-        height: 70vh;
-        margin-top: 40px;
-    }
 
     .carousel-indicators {
         bottom: -3rem !important;
