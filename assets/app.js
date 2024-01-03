@@ -29,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: true
+    once: false
 });
 
 // preloader
