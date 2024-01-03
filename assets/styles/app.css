@@ -387,3 +387,10 @@ hr {
   .modal-open {
     padding-right: 0 !important;
   }
+
+  #stopka {
+    font-size: .7rem;
+    text-align: center;
+    color: #fef9f3;
+    background-color: darkorange;
+  }

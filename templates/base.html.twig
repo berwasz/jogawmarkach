@@ -23,22 +23,15 @@
         <meta property="og:image:alt" content="Logo Kasia Latek - pilates i joga" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <style>
-
-        </style>
         
             <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9PT06EJ46"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-Y9PT06EJ46');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y9PT06EJ46');
         </script>
-
-   
-        {#<link rel="stylesheet" href="{{ asset('app.css') }}">#}
 
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -49,16 +42,18 @@
         {% endblock %}
     </head>
     <body>
+        <!-- Preloader -->
         <div class="loader-container">
             <div class="custom-loader"></div>
         </div>
+        <!-- Preloader -->
 
-        {#<div class="tapeta">#}
             {% block body %}{% endblock %}
-        {#</div>#}
-
-        <script>
-</script>
-
+        
+        <!-- Copyright -->
+        <div id="stopka" class="footer">
+            <span>© 2023-<span id="rok"></span> Copyrights, projekt i wykonanie: BenMedia Bernard Waszczyk</span>
+        </div>
+        <!-- Copyright -->
     </body>
 </html>
