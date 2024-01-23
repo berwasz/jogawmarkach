@@ -7,7 +7,7 @@
 
  
  <div class="container-fluid d-flex flex-column p-0">
- 
+    <h1 style="display:none">Marki — praktyka jogi i ćwiczenia pilates dla dorosłych</h1>
 
     <button type="button" class="btn shadow z-3" id="btn-back-to-top">
         <i style="color: #fef9f3 !important;" class="bi bi-arrow-up h2"></i>
@@ -18,8 +18,8 @@
             <div class="container-fluid d-flex flex-row">
              
                     <div class="navbar-brand d-flex align-items-center">
-                    <img src="{{ asset ('img/Kasia_logo_www_small.webp')}}" width="60" height="60" alt="Logo" title="Kasia Latek | Pilates i joga" class="d-inline-block align-text-top me-1">
-                    Kasia Latek | Pilates i joga
+                    <img src="{{ asset ('img/Kasia_logo_www.webp')}}" width="60" height="60" alt="Logo" title="Kasia Latek | Pilates i joga" class="d-inline-block align-text-top me-1">
+                        Kasia Latek | Pilates i joga
                     </div>
                     
                     <div class="d-flex justify-content-end">
@@ -59,99 +59,102 @@
             </div>
         </nav>
         
-        <div id="intro" class="bg-image shadow" title="Kobieta ćwicząca jogę o zachodzie słońca"></div>
+        <div id="intro" class="bg-image shadow" title="Kasia Latek, instruktorka pilatesu i jogi"></div>
     </header>
 
-    <main style="margin-top: 67.7px;">
-    <div class="container">
-    <!--Section: O mnie-->
-      <section>
-    
-            <div id="omnie" class="row">
-                <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
-                    <div class="bg-image">
-                    <img src="{{ asset ('img/omnie.webp')}}" width="600" height="600" alt="Usmiechnięta kobieta o blond włosach" title="Kasia Latek, instruktorka pilatesu i jogi" class="img-fluid shadow rounded-3"/>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
-                    <h2><strong>O mnie</strong></h2>
-                    <p class="lead">
-                    Jestem instruktorką pilatesu na macie i jogi, pasjonatką wielu form ćwiczeń z zakresu body&mind. 
-                    Mam bogate kwalifikacje <i id="ikonaKwalifikacje" class="bi link-primary bi-box-arrow-up-right" data-bs-toggle="modal" data-bs-target="#kwalifikacje"></i>
-                     i regularnie je podwyższam, aby dzielić się wiedzą na zajęciach. Uwielbiam eksperymentować, 
-                    eksplorować nowe dziedziny i wprowadzać do praktyki element zabawy.
-                    </p>
-                    <p class="lead">
-                    Zależy mi przede wszystkim, żebyście czuli się dobrze i blisko samych siebie, wychodzili z zajęć zdrowsi, zrelaksowani i w dobrych humorach.
-                    </p>
-                    <p class="lead">
-                    Co robię poza matą? Jestem dziennikarką, trenuję pole dance, regularnie medytuję i mam dużo kotów.
-                    </p>
-
-                    <div class="modal fade" id="kwalifikacje" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content border-0 shadow">
-                            <div class="modal-header">
-                                <p class="modal-title fs-5" id="staticBackdropLabel">Kursy i szkolenia</p>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div id="main" style="margin-top: 67.7px;">
+        <div class="container">
+            <!--Section: O mnie-->
+            <section>
+                    <div id="omnie" class="row">
+                        <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
+                            <div class="bg-image">
+                                <picture>
+                                    <source media="(max-width:991px)" srcset="{{ asset('img/omnie.webp') }}">
+                                    <source media="(min-width:992px)" srcset="{{ asset('img/omnie_large.webp') }}">
+                                    <img src="{{ asset ('img/omnie.webp')}}" width="600" height="600" alt="Uśmiechnięta kobieta o blond włosach" title="Kasia Latek, instruktorka pilatesu i jogi" class="img-fluid shadow rounded-3"/>
+                                </picture>
                             </div>
-                            <div class="modal-body">
-                                <ul>
-                                    <li>Instruktor sportu ze specjalizacją pilates (Polska Akademia Sportu)</li>
-                                    <li>Szkolenie stretching (Akademia Zdrofit)</li>
-                                    <li>Kurs Pilates Core</li>
-                                    <li>Szkolenie Zdrowy kręgosłup (Akademia Zdrofit)</li>
-                                    <li>Kurs nauczycielski Joga powięziowa (Yoga Alliance Continuing Education Provider - YACEP)</li>
-                                    <li>Kurs Joga w menopauzie (YACEP)</li>
-                                    <li>Szkolenie Joga dla Seniora (YACEP)</li>
-                                    <li>Kurs nauczycielski Restorative Yoga (YACEP)</li>
-                                    <li>Kurs Vınyasa Krama (YACEP)</li>
-                                    <li>Kurs nauczycielski Medytacja krok po kroku (YACEP)</li>
-                                    <li>Kurs Joga nidra - sztuka relaksacji (YACEP)</li>
-                                    <li>W TRAKCIE - kurs RYT200 Yoga Alliance (200-hour yoga teacher training, vinyasa yoga)</li>
-                                </ul>
-                            </div>
-                            {# <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
-                            </div> #}
+                        </div>
+
+                        <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
+                            <h2><strong>O mnie</strong></h2>
+                            <p class="lead">
+                            Jestem instruktorką pilatesu na macie i jogi, pasjonatką wielu form ćwiczeń z zakresu body&mind.
+                            Mam bogate kwalifikacje <i id="ikonaKwalifikacje" class="bi link-primary bi-box-arrow-up-right" data-bs-toggle="modal" data-bs-target="#kwalifikacje"></i>
+                             i regularnie je podwyższam, aby dzielić się wiedzą na zajęciach. Uwielbiam eksperymentować,
+                            eksplorować nowe dziedziny i wprowadzać do praktyki element zabawy.
+                            </p>
+                            <p class="lead">
+                            Zależy mi przede wszystkim, żebyście czuli się dobrze i blisko samych siebie, wychodzili z zajęć zdrowsi, zrelaksowani i w dobrych humorach.
+                            </p>
+                            <p class="lead">
+                            Co robię poza matą? Jestem dziennikarką, trenuję pole dance, regularnie medytuję i mam dużo kotów.
+                            </p>
+
+                            <div class="modal fade" id="kwalifikacje" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content border-0 shadow">
+                                    <div class="modal-header">
+                                        <p class="modal-title fs-5" id="staticBackdropLabel">Kursy i szkolenia</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Instruktor sportu ze specjalizacją pilates (Polska Akademia Sportu)</li>
+                                            <li>Szkolenie stretching (Akademia Zdrofit)</li>
+                                            <li>Kurs Pilates Core</li>
+                                            <li>Szkolenie Zdrowy kręgosłup (Akademia Zdrofit)</li>
+                                            <li>Kurs nauczycielski Joga powięziowa (Yoga Alliance Continuing Education Provider - YACEP)</li>
+                                            <li>Kurs Joga w menopauzie (YACEP)</li>
+                                            <li>Szkolenie Joga dla Seniora (YACEP)</li>
+                                            <li>Kurs nauczycielski Restorative Yoga (YACEP)</li>
+                                            <li>Kurs Vınyasa Krama (YACEP)</li>
+                                            <li>Kurs nauczycielski Medytacja krok po kroku (YACEP)</li>
+                                            <li>Kurs Joga nidra — sztuka relaksacji (YACEP)</li>
+                                            <li>W TRAKCIE - kurs RYT200 Yoga Alliance (200-hour yoga teacher training, vinyasa yoga)</li>
+                                        </ul>
+                                    </div>
+                                    {# <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div> #}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-      
 
-        <div id="miejsce" class="row">
-            <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
-                <h2><strong>Miejsce</strong></h2>
-                <p class="lead">
-                Ćwiczymy w przestronnej sali w przedszkolu Pastelowy Gaj na ul. Pastelowej 19 w Markach.
-                </p>
-                <p class="lead">
-                Możesz mieć własną matę, ale mamy je także na miejscu.
-                </p>
-            </div>
-            <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
-                
-                <div id="pastelowaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner shadow rounded-3 mt-4">
-                        <div class="carousel-item active">
-                            <img src="{{ asset ('img/sala.webp')}}" class="w-100" alt="Puste pomieszczenie z dużymi oknami" title="Sala, w której odbywają sie zajęcia pilates i joga"/>
+
+                <div id="miejsce" class="row">
+                    <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
+                        <h2><strong>Miejsce</strong></h2>
+                        <p class="lead">
+                        Ćwiczymy w przestronnej sali w przedszkolu Pastelowy Gaj na ul. Pastelowej 19 w Markach.
+                        </p>
+                        <p class="lead">
+                        Możesz mieć własną matę, ale mamy je także na miejscu.
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
+
+                        <div id="pastelowaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner shadow rounded-3 mt-4">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset ('img/sala.webp')}}" class="w-100" alt="Puste pomieszczenie z dużymi oknami" title="Sala, w której odbywają sie zajęcia pilates i joga"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset ('img/pastelowy_gaj.webp')}}" class="w-100" alt="Dwupiętrowy budynek przedszkola" title="Przedszkole Pastelowy Gaj"/>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset ('img/pastelowy_gaj.webp')}}" class="w-100" alt="Dwupiętrowy budynek przedszkola" title="Przedszkole Pastelowy Gaj"/>
-                        </div>
+
+                      {# <img src="img/pastelowy_gaj_1600X1000.webp" class="img-fluid shadow rounded-3" /> #}
+
                     </div>
                 </div>
-                
-              {# <img src="img/pastelowy_gaj_1600X1000.webp" class="img-fluid shadow rounded-3" /> #}
-                
-            </div>
-        </div>
-      </section>
-      <!--Section: O mnie-->
+              </section>
+            <!--Section: O mnie-->
 
       <hr/>
 
@@ -226,10 +229,10 @@
             <div class="col-12 pb-5">
                 <div data-aos="fade-left" id="calendar" class="container-fluid mw-100"></div>
             </div>
-            </div>
         </div>
       </section>
-      <!--Section: Grafik-->
+    </div>
+        <!--Section: Grafik-->
 
       <hr/>
 
@@ -247,7 +250,7 @@
                     </thead>
                     <tbody class="table-group-divider">
                         <tr>
-                            <th class="table-color" scope="row">Joga/pilates - wejście jednorazowe</th>
+                            <th class="table-color" scope="row">Joga/pilates — wejście jednorazowe</th>
                             <td class="table-color text-center">35&nbspzł</td>
                         </tr>
                         <tr>
@@ -267,8 +270,8 @@
                 <div class="table-color col-lg p-2">UWAGA!!! Rozliczamy się na miejscu i tylko gotówką lub blikiem na numer telefonu.</div>
             </div>
         </div>
+    </section>
     </div>
-</section>
     <!--Section: Cennik-->
 
       <hr/>
@@ -336,7 +339,7 @@
                                 <div data-aos="fade-up" data-aos-offset="200" class="row align-items-start">
                                     <div class="col-lg pb-3">
                                         <div class="text-center"><i class="bi bi-fingerprint h2"></i></div>
-                                        <div class="p-2 lead">Przy pierwszym uruchomieniu aplikacji trzeba potwierdzić tożsamość korzystając z konta Google lub Apple ID.</div>
+                                        <div class="p-2 lead">Przy pierwszym uruchomieniu aplikacji trzeba potwierdzić tożsamość, korzystając z konta Google lub Apple ID.</div>
                                     </div>
                                     <div class="col-lg pb-3">
                                         <div class="text-center"><i class="bi bi-door-open h2"></i></div>
@@ -344,7 +347,7 @@
                                     </div>
                                     <div class="col-lg pb-3">
                                         <div class="text-center"><i class="bi bi-calendar3 h2"></i></div>
-                                        <div class="p-2 lead">Żeby zapisać się na zajęcia w dolnym menu wyieramy <span class="fw-bold">Grafik</span>. Obsługa karnetów dostępna jest w zakładce <span class="fw-bold">Profil</span>.</div>
+                                        <div class="p-2 lead">Żeby zapisać się na zajęcia w dolnym menu wybieramy <span class="fw-bold">Grafik</span>. Obsługa karnetów dostępna jest w zakładce <span class="fw-bold">Profil</span>.</div>
                                     </div>
                                 </div>
                             </div>
@@ -370,8 +373,6 @@
         </div>
         
     </section>
-     
-    </main>
 
     <div class="modal fade" id="numerTelefonu" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabelTel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">

@@ -35,20 +35,18 @@ AOS.init({
 // preloader
 document.onreadystatechange = function () {
     if(document.readyState !== 'complete') {
-        document.querySelector('body').style.visibility = 'hidden';
+        document.body.style.visibility = 'hidden';
         document.querySelector('.loader-container').style.visibility = 'visible';
     } else {
         document.querySelector('.loader-container').style.display = 'none';
-        document.querySelector('body').style.visibility = 'visible';
+        document.body.style.visibility = 'visible';
     }
 };
 
 
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
-var myCarousel = document.querySelector('#rejestracja')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  
-})
+const myCarousel = document.querySelector('#rejestracja');
+const carousel = new bootstrap.Carousel(myCarousel, {});
 
 myCarousel.addEventListener('slid.bs.carousel', evt => {
     checkitem();
@@ -59,7 +57,7 @@ $(function () {
 });
 
 function checkitem() {
-    var $this = $('#rejestracja');
+    const $this = $('#rejestracja');
     if($('#rejestracja .carousel-inner .carousel-item:first').hasClass('active')) {
         $this.children('.carousel-control-prev').hide();
         $this.children('.carousel-control-next').show();
@@ -78,9 +76,9 @@ function checkitem() {
 //grafik//
 
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+    const calendarEl = document.querySelector('#calendar');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
+    const calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: [
             interactionPlugin,
             dayGridPlugin,
@@ -104,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
             }
         ],
-        eventClick: function(info) {
+        eventClick: function (info) {
             info.jsEvent.preventDefault(); // don't let the browser navigate
         },
         eventDisplay: 'block',
@@ -118,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
         displayEventEnd: false,
         buttonText: {
-            today : 'Dziś',
+            today: 'Dziś',
             month: 'miesiąc',
             week: 'tydzień',
             day: 'dzień',
@@ -140,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
 /* button go to top */
 
 //Get the button
-let mybutton = document.getElementById("btn-back-to-top");
-let logoHome = document.querySelector(".navbar-brand");
+const mybutton = document.querySelector('#btn-back-to-top');
+const logoHome = document.querySelector('.navbar-brand');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -189,6 +187,6 @@ function hovered(){document.getElementById("hcks").style.background="#f8cd96";}f
 
 /* aktualny rok w stopce z copy */
 
-var date = new Date();
-var year = date.getFullYear();
-document.getElementById("rok").innerHTML = year;
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector('#rok').innerHTML = year;
