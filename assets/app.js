@@ -29,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: true
+    once: false
 });
 
 // preloader
@@ -48,7 +48,7 @@ document.onreadystatechange = function () {
 const myCarousel = document.querySelector('#rejestracja');
 const carousel = new bootstrap.Carousel(myCarousel, {});
 
-myCarousel.addEventListener('slid.bs.carousel', evt => {
+myCarousel.addEventListener('slid.bs.carousel', () => {
     checkitem();
 });
 
@@ -78,7 +78,7 @@ function checkitem() {
 document.addEventListener('DOMContentLoaded', function() {
     const calendarEl = document.querySelector('#calendar');
 
-    const calendar = new FullCalendar.Calendar(calendarEl, {
+    const calendar = new FullCalendar.Calendar(calendarEl,{
         plugins: [
             interactionPlugin,
             dayGridPlugin,
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             today: 'Dziś',
             month: 'widok miesiąca',
             week: 'widok tygodnia'
-        }
+        },
 
     });
 
@@ -158,7 +158,7 @@ function scrollFunction() {
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
-logoHome.addEventListener("click", evt => {
+logoHome.addEventListener("click", () => {
     backToTop();
     history.pushState("", document.title, window.location.pathname);
 });
