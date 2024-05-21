@@ -5,6 +5,34 @@
 
 {% block body %}
 
+<!-- Modal z wydarzeniem na dzień jogi-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Międzynarodowy Dzień Jogi w Markach!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Praktykujesz jogę? A może dopiero chcesz spróbować?</p>
+        <p>Z okazji Międzynarodowego Dnia Jogi zapraszam na wspólną bezpłatną praktykę. Spotkamy się w samo południe 22 czerwca w Markach, ul. Legionowa 1 (sala nad apteką).</p>
+        <p>Zarezerwuj sobie miejsce ze względu na rozmiar sali. Możesz to zrobić przez aplikację efitness (instrukcja <a href="#rejestracja">tu</a>) lub przez messengera.</p>
+        <p>Weź własną matę - albo napisz, żeby zarezerwować, bo mam też trochę swoich.</p>
+        <p>Nie martw się o swoją kondycję, brak przygotowania, poziom zaawansowania. Na macie odnajdzie się każdy!</p>
+        <p>Będzie można też porozmawiać ze mną i zapytać o korzyści z praktykowania jogi czy rozwiać swoje wątpliwości.</p>
+        <p>Obecni mareccy jogini także są oczywiście zaproszeni!</p>
+        <p>Do zobaczenia na macie 🧘‍♀️</p>
+        <p>Kasia Latek</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+        <a href="https://www.facebook.com/events/1514005132505232/"><button type="button" class="btn btn-primary">Weź udział w wydarzeniu</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
  
  <div class="container-fluid d-flex flex-column p-0">
     <h1 style="display:none">Marki — praktyka jogi i ćwiczenia pilates dla dorosłych</h1>
@@ -13,54 +41,54 @@
         <i style="color: #fef9f3 !important;" class="bi bi-arrow-up h2"></i>
     </button>
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="min-height: 68px; background-color: #fef9f3 !important;">
-            <div class="container-fluid d-flex flex-row">
-             
-                    <div class="navbar-brand d-flex align-items-center">
-                    <img src="{{ asset ('img/Kasia_logo_www.webp')}}" width="60" height="60" alt="Logo" title="Kasia Latek | Pilates i joga" class="d-inline-block align-text-top me-1">
-                        Kasia Latek | Pilates i joga
-                    </div>
-                    
-                    <div class="d-flex justify-content-end">
-                        <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="min-height: 68px; background-color: #fef9f3 !important;">
+                <div class="container-fluid d-flex flex-row">
                 
-                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
-                    <ul class="navbar-nav ms-auto flex-nowrap">
-                        {# <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
-                        </li> #}
-                        <li class="nav-item">
-                            <a href="#omnie" title="O mnie" class="nav-link">O mnie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#oferta" title="Oferta" class="nav-link">Oferta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#grafik" title="Grafik" class="nav-link">Grafik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#rejestracja" title="Rejestracja" class="nav-link">Rejestracja</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
-                        </li>
-                    </ul>
+                        <div class="navbar-brand d-flex align-items-center">
+                        <img src="{{ asset ('img/Kasia_logo_www.webp')}}" width="60" height="60" alt="Logo" title="Kasia Latek | Pilates i joga" class="d-inline-block align-text-top me-1">
+                            Kasia Latek | Pilates i joga
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                    <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            {# <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="#omnie" title="O mnie" class="nav-link">O mnie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#oferta" title="Oferta" class="nav-link">Oferta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#grafik" title="Grafik" class="nav-link">Grafik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#rejestracja" title="Rejestracja" class="nav-link">Rejestracja</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        
-        <div id="intro" class="bg-image shadow" title="Kasia Latek, instruktorka pilatesu i jogi"></div>
-    </header>
+            </nav>
+            
+            <div id="intro" class="bg-image shadow" title="Kasia Latek, instruktorka pilatesu i jogi"></div>
+        </header>
 
     <div id="main" style="margin-top: 68px;">
         <div class="container">
@@ -259,15 +287,15 @@
                             <td class="table-color text-center">35&nbspzł</td>
                         </tr>
                         <tr>
-                            <th class="table-color" scope="row">Joga/pilates - 4&nbspwejścia / 30&nbspdni</th>
+                            <th class="table-color" scope="row">PROMOCYJNY Joga/pilates - 4&nbspwejścia / 30&nbspdni</th>
                             <td class="table-color text-center">120&nbspzł</td>
                         </tr>
                         <tr>
-                            <th class="table-color" scope="row">Joga/pilates - 8&nbspwejść / 30&nbspdni</th>
+                            <th class="table-color" scope="row">PROMOCYJNY Joga/pilates - 8&nbspwejść / 30&nbspdni</th>
                             <td class="table-color text-center">200&nbspzł</td>
                         </tr>
                         <tr>
-                            <th class="table-color" scope="row">Pilates - 4&nbspwejścia / 45&nbspdni</th>
+                            <th class="table-color" scope="row">PROMOCYJNY Pilates - 4&nbspwejścia / 45&nbspdni</th>
                             <td class="table-color text-center">120&nbspzł</td>
                         </tr>
                     </tbody>

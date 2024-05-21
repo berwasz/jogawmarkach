@@ -190,3 +190,16 @@ function hovered(){document.getElementById("hcks").style.background="#f8cd96";}f
 const date = new Date();
 const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
+
+const myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+// myModal.show();
+
+// document.onscroll = function() {
+//     setTimeout(myModal.show();
+// };
+
+window.addEventListener('load', function () {
+	setTimeout(function(){
+    	myModal.show();
+	}, 2000);
+});
