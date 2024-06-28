@@ -155,6 +155,7 @@ hr {
 
 .nav-link {
     font-size: 1.25rem;
+    white-space: nowrap;
 }
 
 @media (max-width: 991px) {
@@ -269,6 +270,11 @@ hr {
     padding: 0; 
   }
   
+#navbarNav {
+    margin-top: 10px;
+}
+
+
   /* Icon 1 */
   
   #nav-icon3 {
@@ -403,4 +409,8 @@ hr {
     text-align: center;
     color: #fef9f3;
     background-color: darkorange;
+  }
+
+  .belka {
+    flex-wrap: nowrap !important;
   }

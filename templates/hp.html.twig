@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ parent() }} | Kasia Latek{% endblock %}
+{% block title %}{{ parent() }} | JogawMarkach.pl{% endblock %}
 
 
 {% block body %}
 
 <!-- Modal z wydarzeniem na dzień jogi-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{# <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> #}
 
 
  
@@ -42,12 +42,13 @@
     </button>
 
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="min-height: 68px; background-color: #fef9f3 !important;">
-                <div class="container-fluid d-flex flex-row">
+            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
+                <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
                 
                         <div class="navbar-brand d-flex align-items-center">
-                        <img src="{{ asset ('img/Kasia_logo_www.webp')}}" width="60" height="60" alt="Logo" title="Kasia Latek | Pilates i joga" class="d-inline-block align-text-top me-1">
-                            Kasia Latek | Pilates i joga
+                        <img src="{{ asset ('img/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                        <img src="{{ asset ('img/LOGO_Baner_JogawMarkach_60.webp')}}" width="100%" height="auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                            {# JogawMarkach.pl | Joga i Pilates #}
                         </div>
                         
                         <div class="d-flex justify-content-end">
@@ -59,7 +60,9 @@
                             </div>
                         </div>
                     
-                    <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+                    
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
                         <ul class="navbar-nav ms-auto flex-nowrap">
                             {# <li class="nav-item">
                                 <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
@@ -83,7 +86,6 @@
                                 <a href="#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </nav>
             
@@ -429,7 +431,7 @@
     <footer data-aos="zoom-in" data-aos-offset="200" id="kontakt"
         class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100">
         
-        <span><img data-aos="fade-up" style="width: 20rem; aspect-ratio: 669/709; padding: 1rem" src="{{ asset('img/Kasia_logo_ok_KONTRA_darkorange.webp') }}" alt="Logo"/></span>
+        <span><img data-aos="fade-up" style="width: 20rem; aspect-ratio: 700/700; padding: 1rem" src="{{ asset('img/LOGO_JogawMarkach_footer_700x700.webp') }}" alt="Logo"/></span>
         <div class="row justify-content-around">
             <div class="social d-flex justify-content-center col-md-6 p-0">
                 <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="100" class="m-1"><a class="social-icon p-2 text-body-secondary"

@@ -29,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: false
+    once: true
 });
 
 // preloader
@@ -174,6 +174,7 @@ function backToTop() {
 
 	$('#nav-icon3').on('click', function() {
 		$(this).toggleClass('open');
+        
     });
 
     $('.nav-link').on('click', () => {
@@ -191,15 +192,15 @@ const date = new Date();
 const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
 
-const myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+// const myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
 // myModal.show();
 
 // document.onscroll = function() {
 //     setTimeout(myModal.show();
 // };
 
-window.addEventListener('load', function () {
-	setTimeout(function(){
-    	myModal.show();
-	}, 2000);
-});
+// window.addEventListener('load', function () {
+// 	setTimeout(function(){
+//     	myModal.show();
+// 	}, 2000);
+// });
