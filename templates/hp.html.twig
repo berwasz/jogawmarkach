@@ -5,32 +5,28 @@
 
 {% block body %}
 
-<!-- Modal z wydarzeniem na dzień jogi-->
-{# <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal - zmiana siedziby-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Międzynarodowy Dzień Jogi w Markach!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header d-block text-center">
+        <h2 class="modal-title" id="exampleModalLabel">📢WAŻNE OGŁOSZENIE📢</h2>
+        {# <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> #}
       </div>
-      <div class="modal-body">
-        <p>Praktykujesz jogę? A może dopiero chcesz spróbować?</p>
-        <p>Z okazji Międzynarodowego Dnia Jogi zapraszam na wspólną bezpłatną praktykę. Spotkamy się w samo południe 22 czerwca w Markach, ul. Legionowa 1 (sala nad apteką).</p>
-        <p>Zarezerwuj sobie miejsce ze względu na rozmiar sali. Możesz to zrobić przez aplikację efitness (instrukcja <a href="#rejestracja">tu</a>) lub przez messengera.</p>
-        <p>Weź własną matę - albo napisz, żeby zarezerwować, bo mam też trochę swoich.</p>
-        <p>Nie martw się o swoją kondycję, brak przygotowania, poziom zaawansowania. Na macie odnajdzie się każdy!</p>
-        <p>Będzie można też porozmawiać ze mną i zapytać o korzyści z praktykowania jogi czy rozwiać swoje wątpliwości.</p>
-        <p>Obecni mareccy jogini także są oczywiście zaproszeni!</p>
-        <p>Do zobaczenia na macie 🧘‍♀️</p>
-        <p>Kasia Latek</p>
+      <div class="modal-body text-center">
+        <p>Trwa wakacyjna przerwa! 🌴</p>
+        <p>Zapraszamy na zajęcia od 15 września do nowej siedziby na Legionowej 1B.</p>
+        <p>(to tylko 3 minuty autem, 5 rowerem lub 20 piechotą 😉)</p>
+        <img src="{{ asset ('img/pastelowa_legionowa.webp')}}" width="80%" alt="Mapa dojazdu na Legionową" title="Pastelowa-Legionowa" class="mapa-dojazdu pb-2">
+        <p>Do zobaczenia na macie 🧘‍♀️, Kasia</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
-        <a href="https://www.facebook.com/events/1514005132505232/" target="_blank"><button type="button" class="btn btn-primary">Weź udział w wydarzeniu</button></a>
+        {# <a href="https://www.facebook.com/events/1514005132505232/" target="_blank"><button type="button" class="btn btn-primary">Weź udział w wydarzeniu</button></a> #}
       </div>
     </div>
   </div>
-</div> #}
+</div>
 
 
  
@@ -110,7 +106,7 @@
                         <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
                             <h2><strong>O mnie</strong></h2>
                             <p class="lead">
-                            Jestem instruktorką pilatesu na macie i nauczycielką jogi (RYT 200 vinyasa yoga), pasjonatką wielu form ćwiczeń z zakresu body&mind.
+                            Jestem instruktorką pilatesu na macie i nauczycielką jogi (RYT 200 vinyasa yoga), którą praktykuję od ponad 20 lat. Pasjonuję się wieloma formami ćwiczeń z zakresu body&mind.
                             Mam bogate kwalifikacje <i id="ikonaKwalifikacje" class="bi bi-info-circle-fill" title="Lista kursów i szkoleń" data-bs-toggle="modal" data-bs-target="#kwalifikacje"></i>
                              i regularnie je podwyższam, aby dzielić się wiedzą na zajęciach. Uwielbiam eksperymentować,
                             eksplorować nowe dziedziny i wprowadzać do praktyki element zabawy.
@@ -214,10 +210,10 @@
                     </p>
                     <p class="lead">
                     Niezależnie od tego, z jaką intencją rozpoczynasz praktykę jogi, odnajdziesz w niej coś dla siebie. 
-                    Sprawniejsze ciało, lepszy z nim kontakt, więcej spokoju, głębszy oddech, poczucie, że jesteś tu i teraz – to tylko początek długiej listy korzyści.
+                    Sprawniejsze ciało, lepszy z nim kontakt, więcej spokoju, głębszy oddech, poczucie, że jesteś tu i teraz - to tylko początek długiej listy korzyści.
                     </p>
                     <p class="lead">
-                    Na macie spotykamy się niezależnie od poziomu zaawansowania. W praktyce korzystam z dziedzictwa klasycznej hatha yogi, 
+                    Na macie spotykamy się niezależnie od poziomu zaawansowania. W praktyce korzystam z dziedzictwa klasycznej hatha jogi i jogi vinyasy, 
                     wykorzystuję elementy jogi dla kręgosłupa, pracy z powięzią, restorative yoga (jogi regenerującej). 
                     Praktyka zawiera też elementy pracy z oddechem i kończy się głębokim relaksem.
                     </p>
@@ -378,7 +374,7 @@
                                     </div>
                                     <div class="col-lg pb-3">
                                         <div class="text-center"><i class="bi bi-door-open h2"></i></div>
-                                        <div class="p-2 lead">Następnie z listy klubów wybieramy <span class="fw-bold">Kasia Latek – Pilates i joga</span>. Klikamy Wejdź do klubu i rejestrujemy się.</div>
+                                        <div class="p-2 lead">Następnie z listy klubów wybieramy <span class="fw-bold">JogawMarkach.pl</span>. Klikamy Wejdź do klubu i rejestrujemy się.</div>
                                     </div>
                                     <div class="col-lg pb-3">
                                         <div class="text-center"><i class="bi bi-calendar3 h2"></i></div>
