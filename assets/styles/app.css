@@ -153,9 +153,68 @@ hr {
    
 }
 
+.lb-auth-widget__user {
+    display: inline;
+}
+
+ul.lb-auth-widget__nav {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    /* padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x); */
+}
+
+li.lb-auth-widget__nav__item {
+    display: inline;
+}
+
+.lb-auth-widget__nav__item--login a, .lb-auth-widget__nav__item--signup a {
+    display: inline;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x) !important;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.lb-auth-widget__nav__item--login a {
+    margin-right: var(--bs-nav-link-padding-y);
+}
+
+.lb-auth-widget__nav__item--signup a {
+    margin-left: var(--bs-nav-link-padding-y);
+}
+
+.lb-auth-widget__nav__item--login a:hover, .lb-auth-widget__nav__item--signup a:hover {
+    color: var(--bs-nav-link-hover-color);
+}
+
+.lb-auth-widget__wrapper {
+    height: 42px;
+}
+
+.lb-auth-widget__user__details {
+    display: flex;
+
+}
+
+.lb-auth-widget__user__first-name {
+    padding-right: var(--bs-nav-link-padding-y);
+    margin: 0;
+}
+
+.lb-auth-widget__user__last-name {
+    margin: 0;
+}
+
 .nav-link {
     font-size: 1.25rem;
     white-space: nowrap;
+    
 }
 
 @media (max-width: 991px) {
@@ -172,6 +231,45 @@ hr {
 
     .mapa-dojazdu {
         width: 100%;
+    }
+
+    ul.lb-auth-widget__nav {
+        display: block;
+    }
+
+    .lb-auth-widget__nav__item--login a {
+        margin: 0;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .lb-auth-widget__nav__item--signup a {
+        margin: 0;
+        border-top: 1px solid #f8cd96;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .fitssey {
+        padding: 0;
+    }
+
+    .fitssey-link {
+       
+    }
+
+
+    .lb-auth-widget__wrapper {
+        height: 32px;
+    }
+
+    .lb-auth-widget__user__details {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        padding-top: var(--bs-nav-link-padding-y);
     }
 
 }
@@ -409,12 +507,33 @@ hr {
   }
 
   #stopka {
-    font-size: .7rem;
+    font-size: 1rem;
     text-align: center;
     color: #fef9f3;
     background-color: darkorange;
+    height: 10vh;
   }
 
   .belka {
     flex-wrap: nowrap !important;
+  }
+
+  @media (max-width: 768px) {
+    #stopka {
+        flex-direction: column-reverse;
+        
+    }
+}
+
+  .footer a {
+    text-decoration: none;
+    color:#fef9f3
+  }
+
+  .footer a:hover {
+    color: #442200;
+  }
+
+  .zajecia {
+    font-weight: bold;
   }

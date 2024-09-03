@@ -15,6 +15,8 @@ return [
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_jogawmarkach_homepage', '_controller' => 'App\\Controller\\JogaWMarkachController::homepage'], null, null, null, false, false, null]],
+        '/regulamin' => [[['_route' => 'app_jogawmarkach_regulamin', '_controller' => 'App\\Controller\\JogaWMarkachController::regulamin'], null, null, null, false, false, null]],
+        '/polityka-prywatnosci' => [[['_route' => 'app_jogawmarkach_polityka_prywatnosci', '_controller' => 'App\\Controller\\JogaWMarkachController::politpryw'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

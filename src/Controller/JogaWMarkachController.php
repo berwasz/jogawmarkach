@@ -13,4 +13,14 @@ class JogaWMarkachController extends AbstractController
     public function homepage(): Response {
         return $this->render('hp.html.twig');
     }
+
+    #[Route('/regulamin', name: 'app_jogawmarkach_regulamin')]
+    public function regulamin(): Response {
+        return $this->render('regulamin.html.twig');
+    }
+
+    #[Route('/polityka-prywatnosci', name: 'app_jogawmarkach_polityka_prywatnosci')]
+    public function politpryw(): Response {
+        return $this->render('polityka_prywatnosci.html.twig');
+    }
 }

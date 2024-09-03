@@ -29,7 +29,7 @@ AOS.init({
     duration: 800,
     easing: 'linear',
     offset: 120,
-    once: true
+    once: false
 });
 
 // preloader
@@ -45,95 +45,95 @@ document.onreadystatechange = function () {
 
 
 // chowanie strzałek w karuzeli z instrukcją do aplikacji efitness//
-const myCarousel = document.querySelector('#rejestracja');
-const carousel = new bootstrap.Carousel(myCarousel, {});
+// const myCarousel = document.querySelector('#rejestracja');
+// const carousel = new bootstrap.Carousel(myCarousel, {});
 
-myCarousel.addEventListener('slid.bs.carousel', () => {
-    checkitem();
-});
+// myCarousel.addEventListener('slid.bs.carousel', () => {
+//     checkitem();
+// });
 
-$(function () {
-    checkitem();
-});
+// $(function () {
+//     checkitem();
+// });
 
-function checkitem() {
-    const $this = $('#rejestracja');
-    if($('#rejestracja .carousel-inner .carousel-item:first').hasClass('active')) {
-        $this.children('.carousel-control-prev').hide();
-        $this.children('.carousel-control-next').show();
-    } else if($('.carousel-inner .carousel-item:last').hasClass('active')) {
-        $this.children('.carousel-control-prev').show();
-        $this.children('.carousel-control-next').hide();
-    } else {
-        $this.children('.carousel-control-prev').show();
-        $this.children('.carousel-control-next').show();
+// function checkitem() {
+//     const $this = $('#rejestracja');
+//     if($('#rejestracja .carousel-inner .carousel-item:first').hasClass('active')) {
+//         $this.children('.carousel-control-prev').hide();
+//         $this.children('.carousel-control-next').show();
+//     } else if($('.carousel-inner .carousel-item:last').hasClass('active')) {
+//         $this.children('.carousel-control-prev').show();
+//         $this.children('.carousel-control-next').hide();
+//     } else {
+//         $this.children('.carousel-control-prev').show();
+//         $this.children('.carousel-control-next').show();
 
-    }
-}
+//     }
+// }
 
 // koniec //
 
 //grafik//
 
-document.addEventListener('DOMContentLoaded', function() {
-    const calendarEl = document.querySelector('#calendar');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const calendarEl = document.querySelector('#calendar');
 
-    const calendar = new FullCalendar.Calendar(calendarEl,{
-        plugins: [
-            interactionPlugin,
-            dayGridPlugin,
-            googleCalendarPlugin
-        ],
-        googleCalendarApiKey: 'AIzaSyDP243XC-h9sBXUny4AvExzpfkg2jD7VTA',
-        themeSystem: 'bootstrap5',
-        headerToolbar: {
-            start: 'title',
-            center: 'dayGridMonth,dayGridWeek',
-            end: 'today prev,next'
-        },
-        initialView: 'dayGridMonth',
-        initialDate: new Date(),
-        eventColor: '#ff8c00',
-        locale: 'plLocale',
-        firstDay: 1,
+//     const calendar = new FullCalendar.Calendar(calendarEl,{
+//         plugins: [
+//             interactionPlugin,
+//             dayGridPlugin,
+//             googleCalendarPlugin
+//         ],
+//         googleCalendarApiKey: 'AIzaSyDP243XC-h9sBXUny4AvExzpfkg2jD7VTA',
+//         themeSystem: 'bootstrap5',
+//         headerToolbar: {
+//             start: 'title',
+//             center: 'dayGridMonth,dayGridWeek',
+//             end: 'today prev,next'
+//         },
+//         initialView: 'dayGridMonth',
+//         initialDate: new Date(),
+//         eventColor: '#ff8c00',
+//         locale: 'plLocale',
+//         firstDay: 1,
 
-        eventSources: [
-            {
-                googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
-            }
-        ],
-        eventClick: function (info) {
-            info.jsEvent.preventDefault(); // don't let the browser navigate
-        },
-        eventDisplay: 'block',
-        eventOrder: 'start,title,description',
-        eventTimeFormat:
-            {
-                hour: '2-digit',
-                minute: '2-digit',
-                meridiem: false,
-                hour12: false
-            },
-        displayEventEnd: false,
-        buttonText: {
-            today: 'Dziś',
-            month: 'miesiąc',
-            week: 'tydzień',
-            day: 'dzień',
-            list: 'lista'
-        },
-        buttonHints: {
-            prev: 'Poprzedni $0',
-            next: 'Następny $0',
-            today: 'Dziś',
-            month: 'widok miesiąca',
-            week: 'widok tygodnia'
-        },
+//         eventSources: [
+//             {
+//                 googleCalendarId: 'c1a7a01732723dd8dfb15b01594dd5e7e068f81b3e3d662d8fda6a77e0459ac1@group.calendar.google.com',
+//             }
+//         ],
+//         eventClick: function (info) {
+//             info.jsEvent.preventDefault(); // don't let the browser navigate
+//         },
+//         eventDisplay: 'block',
+//         eventOrder: 'start,title,description',
+//         eventTimeFormat:
+//             {
+//                 hour: '2-digit',
+//                 minute: '2-digit',
+//                 meridiem: false,
+//                 hour12: false
+//             },
+//         displayEventEnd: false,
+//         buttonText: {
+//             today: 'Dziś',
+//             month: 'miesiąc',
+//             week: 'tydzień',
+//             day: 'dzień',
+//             list: 'lista'
+//         },
+//         buttonHints: {
+//             prev: 'Poprzedni $0',
+//             next: 'Następny $0',
+//             today: 'Dziś',
+//             month: 'widok miesiąca',
+//             week: 'widok tygodnia'
+//         },
 
-    });
+//     });
 
-    calendar.render();
-});
+//     calendar.render();
+// });
 
 /* button go to top */
 
@@ -193,14 +193,19 @@ const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
 
 const myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
-// myModal.show();
+if(myModal) {
+  myModal.show();
+}
 
 // document.onscroll = function() {
 //     setTimeout(myModal.show())
 // };
 
-window.addEventListener('load', function () {
-	setTimeout(function(){
-    	myModal.show();
-	}, 2000);
-});
+// window.addEventListener('load', function () {
+// 	setTimeout(function(){
+//     	myModal.show();
+// 	}, 2000);
+// });
+
+
+

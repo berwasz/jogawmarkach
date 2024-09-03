@@ -18,5 +18,9 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_jogawmarkach_homepage' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::homepage'], [], [['text', '/']], [], [], []],
+    'app_jogawmarkach_regulamin' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::regulamin'], [], [['text', '/regulamin']], [], [], []],
+    'app_jogawmarkach_polityka_prywatnosci' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::politpryw'], [], [['text', '/polityka-prywatnosci']], [], [], []],
     'App\Controller\JogaWMarkachController::homepage' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::homepage'], [], [['text', '/']], [], [], []],
+    'App\Controller\JogaWMarkachController::regulamin' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::regulamin'], [], [['text', '/regulamin']], [], [], []],
+    'App\Controller\JogaWMarkachController::politpryw' => [[], ['_controller' => 'App\\Controller\\JogaWMarkachController::politpryw'], [], [['text', '/polityka-prywatnosci']], [], [], []],
 ];
