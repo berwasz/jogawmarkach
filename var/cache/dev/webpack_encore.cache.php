@@ -12,13 +12,13 @@ return [[
     'entrypoints' => [
         'app' => [
             'js' => [
-                'http://localhost:8080/build/runtime.js',
-                'http://localhost:8080/build/vendors-node_modules_aos_dist_aos_js-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_mod-2b1987.js',
-                'http://localhost:8080/build/app.js',
+                '/build/runtime.9a71ee5d.js',
+                '/build/449.97c7902b.js',
+                '/build/app.605ee21d.js',
             ],
             'css' => [
-                'http://localhost:8080/build/vendors-node_modules_aos_dist_aos_js-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_mod-2b1987.css',
-                'http://localhost:8080/build/app.css',
+                '/build/449.75d150a2.css',
+                '/build/app.c49fa2c1.css',
             ],
         ],
     ],
